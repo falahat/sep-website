@@ -1,0 +1,21 @@
+<%= form_for :brother, url: brothers_path do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :pledge_class %><br />
+    <%= f.text_field :pledge_class %>
+  </p>
+  <p>
+    <%= f.label :grad_year %><br />
+    <%= f.date_select :grad_year, :start_year=>2000 %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description%>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
