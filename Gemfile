@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # databases
 gem 'pg'
 
+gem "rails_12factor"
 # Unicorn
 gem 'unicorn'
 
