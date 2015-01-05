@@ -16,4 +16,6 @@
 //= require skel.min
 //= require skel-layers.min
 //= require init
+//= require jquery-ui
+//= require jquery.modal
 //= require_tree .

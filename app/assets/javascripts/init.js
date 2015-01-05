@@ -15,6 +15,7 @@
 			narrow:		{ range: '-980', href: '../stylesheets/style-narrow.css', containers: '95%', grid: { gutters: 25 } },
 			narrower:	{ range: '-840', href: '../stylesheets/style-narrower.css', grid: { collapse: true } },
 			mobile:		{ range: '-640', href: '../stylesheets/style-mobile.css', containers: '90%', grid: { gutters: 15 } }
+
 		}
 	}, {
 		layers: {

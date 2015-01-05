@@ -1,0 +1,28 @@
+<%= render 'shared/head' %>
+<%= render 'shared/header' %>
+
+<div id="main" class="wrapper style3">
+    <div class="container">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="5u brosidebar">
+                <section>
+                    <header class="major">
+                        <%= image_tag @brother.image, class: 'image'%>
+                    </header>                                   
+                    
+                </section>
+            </div>
+
+            <!-- Content -->
+            <div id="content" class="7u skel-cell-important">
+                <section class="property-container">
+                    <header class="major">
+                        <%= render 'brotherinfo' %>
+                    </header>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
