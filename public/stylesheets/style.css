@@ -521,8 +521,8 @@
 		}
 
 			.wrapper.style3 .container {
-				padding-left: 6em;
-				padding-right: 6em;
+				padding-left: 0em;
+				padding-right: 0em;
 			}
 
 			.wrapper.style3 p {
@@ -807,4 +807,21 @@
 	.brosidebar .image {
 		max-width: 90%;
 		max-height: auto
+	}
+
+	.broprop {
+		font-weight: bold;
+	}
+
+	.property-container {
+		max-width: 90%;
+		max-height: auto
+	}
+
+	.property-container hr {
+		border-top: solid 1px #3C4136;
+		border-top-width: 1px;
+		border-right-width: 0px;
+		border-bottom-width: 0px;
+		border-left-width: 0px;
 	}

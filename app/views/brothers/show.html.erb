@@ -9,7 +9,6 @@
             <div id="sidebar" class="5u brosidebar">
                 <section>
                     <header class="major">
-                        <h2> <%= @brother.name %> </h2>
                         <%= image_tag @brother.image, class: 'image'%>
                     </header>                                   
                     
@@ -18,27 +17,28 @@
 
             <!-- Content -->
             <div id="content" class="7u skel-cell-important">
-                <section class="container">
+                <section class="property-container">
                     <header class="major">
                         <h2> <%= @brother.name %> </h2>
+                        <h3> <span> <%= @brother.pledge_class %> </span> *** <span> Tech Chair </span> </h3>
                         <div class="">
                             <div class='property'>
                                 <span class='broprop'></span>
                                 <span class=''></span>
                             </div>
+                            <hr>
                             <div class='property'>
                                 <span class='broprop'> Graduating Class </span>
                                 <span class=''> <%= @brother.grad_year.year %> </span>
                             </div>
-
+                            <hr>
                             <div class='property'>
                                 <span class='broprop'> Major </span>
                                 <span class=''> <%= @brother.major%> </span>
                             </div>
-
+                            <hr>
                             <div class='property'>
-                                <span class='broprop'> Graduating Class </span>
-                                <span class=''> <%= @brother.grad_year %> </span>
+                                <span class=''> <%= @brother.description %> </span>
                             </div>
                         </div>
                     </header>
