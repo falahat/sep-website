@@ -1,4 +1,4 @@
 class Company < ActiveRecord::Base
-	belongs_to_many :jobs
-	belongs_to_many :brothers
+	belongs_to :jobs
+	belongs_to :brothers
 end
