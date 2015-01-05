@@ -4,7 +4,6 @@ class CreateBrothers < ActiveRecord::Migration
     	t.string :name
     	t.string :pledge_class
     	t.date :grad_year
-    	t.text :description
 
     	t.references :jobs
     	t.references :companies
