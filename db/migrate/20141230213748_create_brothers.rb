@@ -6,7 +6,7 @@ class CreateBrothers < ActiveRecord::Migration
     	t.text :description
       t.string :major
       t.string :image_url
-      
+
     	t.references :jobs
       t.references :pledge_class
       t.references :ventures

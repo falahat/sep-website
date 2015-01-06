@@ -7,9 +7,11 @@
 /* Basic */
 
 	#skel-layers-wrapper {
-		padding-top: 44px;
+		padding-top: 0px;
 	}
-
+		.homepage #skel-layers-wrapper {
+			padding-top: 0px;
+		}
 	p {
 		line-height: 1.8em;
 	}
