@@ -15,5 +15,8 @@
  *= 
  *= require jquery-ui
  *= require jquery.modal
+ *= require owl.carousel
+ *= require owl.theme
+ *= require custom-owl
  */
  

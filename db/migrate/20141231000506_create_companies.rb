@@ -1,10 +1,11 @@
 class CreateCompanies < ActiveRecord::Migration
   def change
     create_table :companies do |t|
-    	t.references :jobs
-    	t.references :brothers
     	t.string :name
     	t.text :description
+    	t.string :logo_url
+    	t.boolean :isVenture
+    	t.references :brothers
 
       t.timestamps null: false
     end

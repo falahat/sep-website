@@ -19,3 +19,4 @@
 //= require jquery-ui
 //= require jquery.modal
 //= require_tree .
+//= require owl.carousel

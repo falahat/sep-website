@@ -480,10 +480,14 @@
 
 		.wrapper.style2 {
 			background: #f2f2f2;
+			
+
+			}
+			
 		}
 
 			.wrapper.style2 .major {
-				text-align: left !important;
+				text-align: center !important;
 			}
 
 				.wrapper.style2 .major h2 {
@@ -499,7 +503,7 @@
 				.wrapper.style2 .major .byline {
 					letter-spacing: normal;
 					line-height: 1.6em;
-					text-transform: capitalize;
+					text-transform: none;
 					font-size: 1.4em;
 				}
 
@@ -518,7 +522,9 @@
 			background: #82b440;
 			text-align: center;
 			color: white;
+
 		}
+
 
 			.wrapper.style3 .container {
 				padding-left: 0em;
@@ -527,6 +533,16 @@
 
 			.wrapper.style3 p {
 				font-size: 1.6em;
+			}
+			.wrapper.style3.ventures {
+				width: 80%;
+				padding: em 0em 4em 0em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.wrapper.style3.ventures.container {
+				border-left: auto;
+				border-right: auto;
 			}
 
 		.wrapper.style4 {
@@ -667,7 +683,7 @@
 /* Banner */
 
 	#banner {
-		padding: 6em 0em 3em 0em;
+		padding: .5em 0em 3em 0em;
 		text-align: center;
 		text-transform: uppercase;
 		color: white;
@@ -676,6 +692,11 @@
 		#banner .container {
 			padding: 0em 8em;
 		}
+
+			#banner .logo {
+				max-width: 70%;
+				max-height: auto;
+			}
 
 		#banner h2 {
 			display: inline-block;
@@ -831,4 +852,9 @@
 #logo>.image{
 	max-height: 5%;
 	max-width: 5%;
+}
+
+.wrapper .style2 .ventures {
+	width: 80%;
+	height: 80%;
 }

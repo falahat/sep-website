@@ -11,33 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150105033012) do
+ActiveRecord::Schema.define(version: 20150106034029) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "brothers", force: :cascade do |t|
     t.string   "name"
-    t.string   "pledge_class"
     t.date     "grad_year"
-    t.integer  "jobs_id"
-    t.integer  "companies_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.string   "description"
-    t.string   "image_url"
+    t.text     "description"
     t.string   "major"
-    t.string   "minor"
+    t.string   "image_url"
+    t.integer  "jobs_id"
+    t.integer  "pledge_class_id"
+    t.integer  "ventures_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "companies", force: :cascade do |t|
-    t.integer  "jobs_id"
-    t.integer  "brothers_id"
     t.string   "name"
     t.text     "description"
+    t.string   "logo_url"
+    t.boolean  "isVenture"
+    t.integer  "brothers_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "image_url"
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -46,8 +45,47 @@ ActiveRecord::Schema.define(version: 20150105033012) do
     t.date     "start"
     t.date     "end"
     t.integer  "brother_id"
+    t.integer  "companies_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "pledge_classes", force: :cascade do |t|
+    t.string   "name"
+    t.date     "pledge_semester"
+    t.integer  "brothers_id"
+    t.integer  "professional_event_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  create_table "professional_events", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "image_url"
+    t.integer  "pledge_class_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "rush_events", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "subtitle"
+    t.date     "time"
+    t.string   "location"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "testimonials", force: :cascade do |t|
+    t.string   "image_url"
+    t.text     "text"
+    t.string   "author"
+    t.string   "author_role"
+    t.inet     "verticle_alignment"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
 end

@@ -8,6 +8,7 @@ class CreateJobs < ActiveRecord::Migration
 
 
     	t.references :brother
+      t.references :companies
 
      	t.timestamps null: false
     end
