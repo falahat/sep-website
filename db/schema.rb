@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
   enable_extension "plpgsql"
 
   create_table "brothers", force: :cascade do |t|
+    t.string   "role"
     t.string   "name"
     t.date     "grad_year"
     t.text     "description"
@@ -24,7 +25,6 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.string   "image_url"
     t.integer  "jobs_id"
     t.integer  "pledge_class_id"
-    t.integer  "ventures_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.text     "description"
     t.string   "logo_url"
     t.boolean  "isVenture"
-    t.integer  "brothers_id"
+    t.integer  "jobs_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -45,9 +45,9 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.date     "start"
     t.date     "end"
     t.integer  "brother_id"
-    t.integer  "companies_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "company_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "pledge_classes", force: :cascade do |t|
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
 
   create_table "rush_events", force: :cascade do |t|
     t.string   "name"
+    t.string   "attire"
     t.text     "description"
     t.string   "subtitle"
     t.date     "time"

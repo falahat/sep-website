@@ -5,8 +5,7 @@ class CreateCompanies < ActiveRecord::Migration
     	t.text :description
     	t.string :logo_url
     	t.boolean :isVenture
-    	t.references :brothers
-
+      t.references :jobs
       t.timestamps null: false
     end
   end

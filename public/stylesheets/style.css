@@ -557,7 +557,16 @@
 
 			.wrapper.style5 .image {
 				display: block;
-				width: 60%;
+				width: 90%;
+				height: 90%;
+				margin: 0em auto 2em auto;
+			}
+
+			.wrapper.style5 .u3 {
+				background: #82b440;
+				display: block;
+				width: 80%;
+				height: 80%;
 				margin: 0em auto 2em auto;
 			}
 
@@ -857,4 +866,24 @@
 .wrapper .style2 .ventures {
 	width: 80%;
 	height: 80%;
+}
+
+.pledge-class {
+	background-color: #82b440;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 4px 6px;
+	font-size: 16.073999999999998px;
+	font-weight: 700;
+	line-height: 19px;
+}
+
+.role {
+	background-color: #82b440;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 4px 6px;
+	font-size: 16.073999999999998px;
+	font-weight: 700;
+	line-height: 19px;
 }
