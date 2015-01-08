@@ -887,3 +887,30 @@
 	font-weight: 700;
 	line-height: 19px;
 }
+
+.row {
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.stretch {
+	width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.venture-box {
+	display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    -webkit-align-content: space-around; /* Safari 7.0+ */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+
+
+.flex-container {
+  flex-wrap: wrap;
+}

@@ -6,7 +6,7 @@
             <h2>Say Hello to Our Brothers</h2>
             <span class="byline">They're sexy as fuck</span>
         </header>
-        <div class="row">
+        <div class="row brother-container venture-container">
             <% @brothers.each do |bro| %>
                 <div class="3u">
                     <%= link_to_modal( bro, id: "further", class: 'image') do %>
@@ -15,6 +15,7 @@
                     <h3> <%= bro.name %> </h3>
                 </div>
             <% end %>
+            <span class="stretch" > </span>
         </div>
     </section>
 </div>

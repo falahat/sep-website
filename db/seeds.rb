@@ -57,7 +57,7 @@ venture.save
 venture = Company.create(
 	name: "Cibo",
 	description: "Get fed.",
-	logo_url: "companies/cibo.jpg",
+	logo_url: "companies/cibo.png",
 	isVenture: true)
 venture.save
 venture = Company.create(
@@ -85,7 +85,7 @@ user = Brother.create(
 	pledge_class: eta,
 	grad_year: DateTime.new(2017, 5, 15, 20, 10, 0),
 	description: "Aryan is a cool dude I guess",
-	image_url: "brothers/Aryan_Falahatpisheh.jpg",
+	image_url: "brothers/Jasmine-Stoy.jpg",
 	major: "Computer Science")
 
 job = Job.create(
@@ -103,7 +103,7 @@ user = Brother.create(
 	pledge_class: gamma,
 	grad_year: DateTime.new(2016, 5, 15, 20, 10, 0),
 	description: "I agree that Aryan is cool",
-	image_url: "brothers/Jasmine_Stoy.jpg",
+	image_url: "brothers/Jasmine-Stoy.jpg",
 	major: "Business Administration")
 user.save
 
@@ -113,7 +113,7 @@ user = Brother.create(
 	pledge_class: gamma,
 	grad_year: DateTime.new(2016, 05, 15, 20, 10, 0),
 	description: "Yeah no that guy's hot",
-	image_url: "brothers/Anant_Agarwal.jpg",
+	image_url: "brothers/Anant-Agarwal.jpg",
 	major: "Economics")
 user.save
 
