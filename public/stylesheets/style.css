@@ -571,10 +571,16 @@
 			}
 
 				.wrapper.style5 .image img {
-					border-radius: 50%;
-					border: 10px solid;
+					
+					border: 5px solid;
 					border-color: white;
 				}
+
+					.wrapper.style5 .image .rounded img {
+						border-radius: 50%;
+						border: 50px solid;
+						border-color: white;
+					}
 
 /* Header */
 

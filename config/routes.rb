@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'companies/ventures'
 
+
   get 'companies/connections'
   get "brothers/pledge_classes"
   get "brothers/actives"
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   get "welcome/about_us"
   get 'welcome/index'
   root 'welcome#index'
+  resources :companies
   resources :brothers
   
 

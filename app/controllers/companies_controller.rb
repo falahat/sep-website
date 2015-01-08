@@ -12,4 +12,8 @@ class CompaniesController < ApplicationController
   	@companies = Company.all
   	@title = "Connections"
   end
+
+  def show
+    @company = Company.find(params[:id])
+  end
 end

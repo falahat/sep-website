@@ -18,8 +18,8 @@
                     <% else %>
                         <div class="2u">
                     <% end %>
-                        <%= link_to_modal( bro, id: "further", class: 'image') do %>
-                            <%= image_tag(bro.image, class: 'bropic') %>
+                        <%= link_to_modal( bro, id: "further", class: 'image rounded') do %>
+                            <%= image_tag(bro.image, class: 'bropic image rounded') %>
                         <% end %>
                         
                         <% if action_name.eql?("executive_board") %>

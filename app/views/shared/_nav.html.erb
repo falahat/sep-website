@@ -2,13 +2,13 @@
 		<div class="container">
 				
 			<!-- Logo -->
-				<h1><a href="#" id="logo"> Sigma Eta Pi</a></h1>
+				<h1> <%= link_to "Sigma Eta Pi", welcome_index_path, id: "logo" %></h1>
 			<!-- Nav -->
 				<nav id="nav">
 					<ul>
 						<li class="active"><%= link_to "Home", welcome_index_path %></a></li>
 						<li>
-							<a href="">Brothers</a>
+							<%= link_to "Brothers", brothers_actives_path %>
 							<ul>
 								<li><%= link_to 'Actives', brothers_actives_path %></li>
 								<li><%= link_to 'Pledge Classes', brothers_pledge_classes_path %></li>

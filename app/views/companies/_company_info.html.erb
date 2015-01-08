@@ -1,0 +1,22 @@
+<h2> <%= @company.name %> </h2>
+
+    <% if @company.isVenture %>
+        <h3> <span class="role"> SEP Venture </span> </h3>
+    <% end %>
+<div class="">
+    <h1 class="decorated" > <span class='broprop'> About </span> </h1>
+    <div class='property'>
+        <span class=''> <%= @company.description %> </span>
+    </div>
+
+    <div class='property'>
+    <% if (!@company.brothers.empty?) %>
+
+        <h1 class="decorated" > <span class='broprop'> Brothers </span> </h1>
+        <% @company.brothers.each do |brother| %>
+            <span> <%= brother.name %> </span>
+
+        <% end %>
+    <% end %>
+    </div>
+</div>
