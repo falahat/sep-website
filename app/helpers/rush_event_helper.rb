@@ -1,0 +1,2 @@
+module RushEventHelper
+end

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'rush_event/application'
+
+  get 'rush_event/events'
+
   get 'companies/index'
 
   get 'companies/ventures'
@@ -7,6 +11,7 @@ Rails.application.routes.draw do
   get "brothers/pledge_classes"
   get "brothers/actives"
   get "brothers/executive_board"
+  get "welcome/about_us"
   get 'welcome/index'
   root 'welcome#index'
   resources :brothers

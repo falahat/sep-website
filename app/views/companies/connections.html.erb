@@ -1,2 +1,12 @@
-<h1>Companies#connections</h1>
-<p>Find me in app/views/companies/connections.html.erb</p>
+<html class="homepage">
+	<%= render 'shared/head' %>
+	<%= render 'shared/header' %>
+	<div class="wrapper style5">
+		<section class="container">
+			<header class="major">
+				<h2> <%= @title %> </h2>
+			</header>
+			<%= render 'list' %>
+		</section>
+	<%= render "shared/footer" %>
+</html>

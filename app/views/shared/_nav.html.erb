@@ -15,9 +15,16 @@
 								<li><%= link_to 'Executive Board', brothers_executive_board_path %></li>
 							</ul>
 						</li>
-						<li><a href="left-sidebar.html">About</a></li>
-						<li><a href="right-sidebar.html">Rush</a></li>
-						<li><a href="no-sidebar.html">Contact Us</a></li>
+						<li>
+							<%= link_to "About", welcome_about_us_path %>
+							<ul>
+								<li> <%= link_to "About Us", welcome_about_us_path %> </li>
+								<li> <%= link_to "Connections", companies_connections_path %> </li>
+								<li> <%= link_to "Ventures", companies_ventures_path %> </li>
+							</ul>
+						</li>
+
+						<li><%= link_to "Rush", rush_event_events_path %></li>
 					</ul>
 				</nav>
 		</div>

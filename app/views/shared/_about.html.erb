@@ -5,7 +5,7 @@
 					<div class="row double">
 						<div class="4u">
 							<header class="major">
-								<h2>What We Do</h2>
+								<h2 class = "decorated"> <span>What We Do </span> </h2>
 								<span class="byline">Sigma Eta Pi is dedicated to developing human potential. Our mission is to transform individuals into starters who follow their passion, develop lasting relationships, and create value through innovative pursuits. 
 
 We educate our brothers with the most comprehensive knowledge of the start-up ecosystem and venture processes and equip them with a concrete set of skills sourced from the diverse backgrounds of our house.</span>
@@ -29,41 +29,19 @@ We educate our brothers with the most comprehensive knowledge of the start-up ec
 			<div class="wrapper style5">
 				<section class="container">
 					<header class="major">
-						<h2>Want To Learn More?</h2>
+						<h2 class = "decorated"> <span>Want To Learn More? </span></h2>
 					</header>
 					
 					<div class="row">
 						<div class="6u">
-							<h1> See Our Brothers </h1>
 							<%= link_to("Brothers", brothers_actives_path , class: "button alt") %>
 						</div>
 						<div class="6u">
-							<h1> See Our Ventures </h1>
+							<%= link_to("Connections", companies_connections_path , class: "button alt") %>
 						</div>
 					</div>
 				</section>
 			</div>
 
 		<!-- Section Three -->
-			<div class="wrapper style4">
-				<section class="container">
-					<header class="major">
-						<h2>Rush</h2>
-						<span class="byline"></span>
-					</header>
-					<div class="row flush">
-						<% RushEvent.all.each do |event| %>
-							<div class="3u">
-								<h2> <%= event.name %></h2>
-								<br>
-								<span class="broprop"> Date </span>
-								<span> <%= event.time.strftime("%A, %b %-d") %></span>
-								<br>
-								<span class="broprop"> Time </span>
-								<span> <%= event.time.strftime("%r") %></span>
-							</div>
-						<% end %>
-					</div>
-				</section>
-			</div>
-
+			<%= render 'rush_event/list' %>
