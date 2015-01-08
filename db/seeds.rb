@@ -85,7 +85,6 @@ user = Brother.create(
 	pledge_class: eta,
 	grad_year: DateTime.new(2017, 5, 15, 20, 10, 0),
 	description: "Aryan is a cool dude I guess",
-	image_url: "brothers/Jasmine-Stoy.jpg",
 	major: "Computer Science")
 
 job = Job.create(
