@@ -85,6 +85,7 @@ user = Brother.create(
 	pledge_class: eta,
 	grad_year: DateTime.new(2017, 5, 15, 20, 10, 0),
 	description: "Aryan is a cool dude I guess",
+	active: true,
 	major: "Computer Science")
 
 job = Job.create(
@@ -103,6 +104,7 @@ user = Brother.create(
 	grad_year: DateTime.new(2016, 5, 15, 20, 10, 0),
 	description: "I agree that Aryan is cool",
 	image_url: "brothers/Jasmine-Stoy.jpg",
+	active: true,
 	major: "Business Administration")
 user.save
 
@@ -113,6 +115,7 @@ user = Brother.create(
 	grad_year: DateTime.new(2016, 05, 15, 20, 10, 0),
 	description: "Yeah no that guy's hot",
 	image_url: "brothers/Anant-Agarwal.jpg",
+	active: true,
 	major: "Economics")
 user.save
 

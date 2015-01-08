@@ -1,0 +1,14 @@
+<header class="major">
+	<h2>Ventures</h2>
+</header>
+<p>See what our brothers have built.</p>
+<% @ventures.each_slice(4) do |row| %>
+	<div class="row">
+		<% row.each do |venture| %>
+			<div class="3u venture-box">
+				<%= image_tag venture.logo_url, class: 'image bropic' %>
+			</div>
+		<% end %>
+	</div>
+	 <span class="stretch" > </span>
+<% end %>
