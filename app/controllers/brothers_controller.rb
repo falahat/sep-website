@@ -1,6 +1,58 @@
 class BrothersController < ApplicationController
   def index
     @brothers = Brother.all
+    @rows = Array.new
+    @byline = nil
+    row = Hash.new
+    row[:brothers] = @brothers
+    row[:title] = "All"
+    @rows.push(row)
+  end
+
+  def pledge_classes
+    classes = PledgeClass.all
+    @rows = Array.new
+    classes.each do |pclass|
+      row = Hash.new
+      row[:title] = pclass.name
+      row[:brothers] = pclass.brothers
+      if !row[:brothers].empty?
+        @rows.push(row)
+      end
+    end
+    @byline = nil
+    render("index")
+  end
+
+  def actives
+    pictured = Brother.where.not(image_url: nil).where(active: true)
+    not_pictured = Brother.where(image_url: nil).where(active: true)
+    @rows = Array.new
+
+    picrow = Hash.new
+    unpicrow = Hash.new
+
+    picrow[:brothers] = pictured
+    picrow[:title] = nil
+    unpicrow[:brothers] = not_pictured
+    unpicrow[:title] = "Not Pictured"
+
+    @rows.push(picrow)
+    @rows.push(unpicrow)
+
+    @byline = nil
+    render("index")
+  end
+
+  def executive_board
+    @brothers = Brother.where.not(role: nil)
+    @rows = Array.new
+    @byline = nil
+    row = Hash.new
+    row[:brothers] = @brothers
+    row[:title] = "Executive Board"
+    @rows.push(row)
+    render("index")
   end
 
   def show

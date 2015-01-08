@@ -833,6 +833,17 @@
 		max-height: 100%
 	}
 
+	#team .image {
+		margin-top: 0em;
+		margin-bottom: 0em;
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+
+	.brother-container .2u {
+		text-align: center
+	}
+
 /* Brother */
 	.brosidebar .image {
 		max-width: 90%;
@@ -889,7 +900,7 @@
 }
 
 .row {
-	text-align: justify;
+	text-align: center;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
 }
@@ -913,4 +924,28 @@
 
 .flex-container {
   flex-wrap: wrap;
+}
+
+/* headlines with lines */
+.decorated{
+     overflow: hidden;
+     text-align: center;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 591px; /* half of limiter*/
+    margin: 0 20px;
+}
+.decorated > span:before{
+    right: 100%;
+}
+.decorated > span:after{
+    left: 100%;
 }

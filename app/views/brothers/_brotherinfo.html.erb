@@ -7,10 +7,7 @@
     <% end %>
 </h3>
 <div class="">
-    <div class='property'>
-        <span class='broprop'></span>
-        <span class=''></span>
-    </div>
+    <h1 class="decorated" > <span class='broprop'> School </span> </h1>
     <div class='property'>
         <span class='broprop'> Graduating Class </span>
         <span class=''> <%= @brother.grad_year.year %> </span>
@@ -23,9 +20,9 @@
 
     <div class='property'>
     <% if (!@brother.jobs.empty?) %>
-        <span class='broprop'> Experience </span>
+
+        <h1 class="decorated" > <span class='broprop'> Experience </span> </h1>
         <% @brother.jobs.each do |job| %>
-            <br>
             <span> <%= job.role %> @ <%= job.company.name %> </span>
 
         <% end %>

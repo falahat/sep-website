@@ -12,11 +12,13 @@ We educate our brothers with the most comprehensive knowledge of the start-up ec
 							</header>
 						</div>
 						<div class="8u owl-carousel">
-							<div>
-								<div class="testimonial">
-									"Sigma Eta Pi is a toolbox; it enables us to build not on our next big startup, but on ourselves. SEP gave me the confidence and skill set to pursue any future venture in my life."
-								</div>
-								<%= image_tag 'group/etasinforest.jpg', class: 'test-img'%>
+							<div class="testimonial">
+								<% Testimonial.all.each do |testimonial| %>
+									<div>
+										<%= testimonial.text %>
+									</div>
+									<%= image_tag testimonial.image_url%>
+								<% end %>
 							</div>
 						</div>
 					</div>
@@ -27,9 +29,18 @@ We educate our brothers with the most comprehensive knowledge of the start-up ec
 			<div class="wrapper style5">
 				<section class="container">
 					<header class="major">
-					<h2>Want To Learn More?</h2>
-				</header>
-				<p>See what our brothers have built.</p>
+						<h2>Want To Learn More?</h2>
+					</header>
+					
+					<div class="row">
+						<div class="6u">
+							<h1> See Our Brothers </h1>
+							<%= link_to("Brothers", brothers_actives_path , class: "button alt") %>
+						</div>
+						<div class="6u">
+							<h1> See Our Ventures </h1>
+						</div>
+					</div>
 				</section>
 			</div>
 
@@ -37,67 +48,21 @@ We educate our brothers with the most comprehensive knowledge of the start-up ec
 			<div class="wrapper style4">
 				<section class="container">
 					<header class="major">
-						<h2>Cras vitae metus aliNuam</h2>
-						<span class="byline">pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.</span>
+						<h2>Rush</h2>
+						<span class="byline"></span>
 					</header>
 					<div class="row flush">
-						<div class="4u">
-							<ul class="special-icons">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Nulla luctus eleifend</h3>
-									<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
-								</li>
-								<li>
-									<span class="fa fa-wrench"></span>
-									<h3>Etiam posuere augue</h3>
-									<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
-								</li>
-								<li>
-									<span class="fa fa-leaf"></span>
-									<h3>Fusce ultrices fringilla</h3>
-									<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
-								</li>
-							</ul>
-						</div>
-						<div class="4u">
-							<ul class="special-icons">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Nulla luctus eleifend</h3>
-									<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
-								</li>
-								<li>
-									<span class="fa fa-wrench"></span>
-									<h3>Etiam posuere augue</h3>
-									<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
-								</li>
-								<li>
-									<span class="fa fa-leaf"></span>
-									<h3>Fusce ultrices fringilla</h3>
-									<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
-								</li>
-							</ul>
-						</div>
-						<div class="4u">
-							<ul class="special-icons">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Nulla luctus eleifend</h3>
-									<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
-								</li>
-								<li>
-									<span class="fa fa-wrench"></span>
-									<h3>Etiam posuere augue</h3>
-									<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
-								</li>
-								<li>
-									<span class="fa fa-leaf"></span>
-									<h3>Fusce ultrices fringilla</h3>
-									<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
-								</li>
-							</ul>
-						</div>
+						<% RushEvent.all.each do |event| %>
+							<div class="3u">
+								<h2> <%= event.name %></h2>
+								<br>
+								<span class="broprop"> Date </span>
+								<span> <%= event.time.strftime("%A, %b %-d") %></span>
+								<br>
+								<span class="broprop"> Time </span>
+								<span> <%= event.time.strftime("%r") %></span>
+							</div>
+						<% end %>
 					</div>
 				</section>
 			</div>

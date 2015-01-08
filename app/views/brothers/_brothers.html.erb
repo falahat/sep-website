@@ -3,19 +3,35 @@
 <div class="wrapper style5">
     <section id="team" class="container">
         <header class="major">
-            <h2>Say Hello to Our Brothers</h2>
-            <span class="byline">They're sexy as fuck</span>
-        </header>
-        <div class="row brother-container venture-container">
-            <% @brothers.each do |bro| %>
-                <div class="3u">
-                    <%= link_to_modal( bro, id: "further", class: 'image') do %>
-                        <%= image_tag(bro.image, class: 'bropic') %>
-                    <% end %>
-                    <h3> <%= bro.name %> </h3>
-                </div>
+            <% if !@byline.nil? %>
+                <span class="byline"><%= @byline %></span>
             <% end %>
-            <span class="stretch" > </span>
-        </div>
+        </header>
+        <% @rows.each do |row| %>
+            <% if !row[:title].nil? %>
+                <h3 class="decorated"> <span> <%= row[:title] %> </span> </h3>
+            <% end %>
+            <div class="row brother-container">
+                <% row[:brothers].each do |bro| %>
+                    <% if action_name.eql?("executive_board") %>
+                        <div class="3u">
+                    <% else %>
+                        <div class="2u">
+                    <% end %>
+                        <%= link_to_modal( bro, id: "further", class: 'image') do %>
+                            <%= image_tag(bro.image, class: 'bropic') %>
+                        <% end %>
+                        
+                        <% if action_name.eql?("executive_board") %>
+                            <h2> <%= bro.name %> </h2>
+                            <h1> <%= bro.role %> </h1>
+                        <% else %>
+                            <h1> <%= bro.name %> </h1>
+                        <% end %>
+                    </div>
+                <% end %>
+                <span class="stretch" > </span>
+            </div>
+        <% end %>
     </section>
 </div>

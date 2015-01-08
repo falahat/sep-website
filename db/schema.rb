@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.text     "description"
     t.string   "major"
     t.string   "image_url"
+    t.boolean  "active"
     t.integer  "jobs_id"
     t.integer  "pledge_class_id"
     t.datetime "created_at",      null: false

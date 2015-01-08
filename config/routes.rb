@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'companies/index'
+
+  get 'companies/ventures'
+
+  get 'companies/connections'
+  get "brothers/pledge_classes"
+  get "brothers/actives"
+  get "brothers/executive_board"
   get 'welcome/index'
   root 'welcome#index'
   resources :brothers
