@@ -192,8 +192,8 @@ def loadActives
 		brother.pledge_class = pledgeClass
 		brother.active = true
 		brother.major = vals["Major"]
-		image_url = "brothers/" + brother.to_image_name
-		if (File.exists? ("public/images/" + image_url))
+		image_url = brother.to_image_name
+		if (File.exists? ("public/images/brothers/" + image_url))
 			brother.image_url = image_url
 		end
 		brother.save

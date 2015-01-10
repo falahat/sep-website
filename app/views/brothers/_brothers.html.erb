@@ -7,26 +7,33 @@
                 <span class="byline"><%= @byline %></span>
             <% end %>
         </header>
+
         <% @rows.each do |row| %>
             <% if !row[:title].nil? %>
                 <h3 class="decorated"> <span> <%= row[:title] %> </span> </h3>
             <% end %>
-            <div class="row brother-container">
-                <% row[:brothers].each do |bro| %>
-                    <% if action_name.eql?("executive_board") %>
-                        <div class="3u">
-                    <% else %>
-                        <div class="2u">
-                    <% end %>
-                        <%= link_to_modal( bro, id: "further", class: 'image rounded') do %>
-                            <%= image_tag(bro.image, class: 'bropic image rounded') %>
-                        <% end %>
-                        
-                        <% if action_name.eql?("executive_board") %>
-                            <h2> <%= bro.name %> </h2>
-                            <h1> <%= bro.role %> </h1>
-                        <% else %>
-                            <h1> <%= bro.name %> </h1>
+            <div class="brother-container">
+
+                <% row[:brothers].each_slice(6) do |row| %>
+                    <hr>
+                    <div class="row">
+                        <% row.each do |bro| %>
+                            <% if action_name.eql?("executive_board") %>
+                                <div class="3u">
+                            <% else %>
+                                <div class="2u">
+                            <% end %>
+                                <%= link_to_modal( bro, id: "further", class: 'image rounded') do %>
+                                    <%= image_tag(bro.image, class: 'bropic image rounded') %>
+                                <% end %>
+                                
+                                <% if action_name.eql?("executive_board") %>
+                                    <h2> <%= bro.name %> </h2>
+                                    <h1> <%= bro.role %> </h1>
+                                <% else %>
+                                    <h1> <%= bro.name %> </h1>
+                                <% end %>
+                            </div>
                         <% end %>
                     </div>
                 <% end %>

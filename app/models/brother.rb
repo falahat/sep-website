@@ -5,15 +5,17 @@ class Brother < ActiveRecord::Base
 	belongs_to :pledge_class
 	accepts_nested_attributes_for :jobs
 	def image()
+		base = "brothers/"
 		if ((self.image_url).nil?)
-	      return ('placeholder.png')
+	      return base + ('placeholder.png')
 	    else
-	      return (self.image_url)
+	      return base + (self.image_url)
 	    end
 	end
 
 	def to_image_name
 		ans = String.new(self.name)
+		ans = ans.downcase
 		return (ans.gsub! " ", "-") + ".jpg"
 	end
 end
