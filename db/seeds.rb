@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+require 'csv'
+
+
 alpha = PledgeClass.create(
 	name: "Alpha",
 	pledge_semester: DateTime.new(2011, 9, 1, 0, 0, 0)
@@ -149,3 +152,53 @@ event = RushEvent.create(
 	attire: "Business Casual"
 	)
 event.save
+
+
+
+
+def getBrother(name)
+	user = Brother.find_by(name: name)
+	if user.nil?
+		user = Brother.create(name: name)
+		user.save
+	end
+	return user
+end
+
+def getPledgeClass(name)
+	pclass = PledgeClass.find_by(name: name)
+	if pclass.nil?
+		pclass = PledgeClass.create(name: name)
+	end
+	return pclass
+end
+
+def loadActives
+	CSV.foreach("db/Raw/Actives.csv", :headers => true) do |row|
+		vals = row.to_hash
+		name = vals["Name"]
+
+		pledgeClassName = vals["Class"]
+		pledgeClassName.strip!
+		pledgeClassName = pledgeClassName.downcase
+		pledgeClass = getPledgeClass(pledgeClassName)
+
+
+		gradYear = (vals["Year"]).to_i
+		gradDate = DateTime.new gradYear
+
+		brother = getBrother(name)
+		brother.grad_year = gradDate
+		brother.pledge_class = pledgeClass
+		brother.active = true
+		brother.major = vals["Major"]
+		image_url = "brothers/" + brother.to_image_name
+		if (File.exists? ("public/images/" + image_url))
+			brother.image_url = image_url
+		end
+		brother.save
+	end
+
+end
+
+loadActives

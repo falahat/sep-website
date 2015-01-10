@@ -11,4 +11,9 @@ class Brother < ActiveRecord::Base
 	      return (self.image_url)
 	    end
 	end
+
+	def to_image_name
+		ans = String.new(self.name)
+		return (ans.gsub! " ", "-") + ".jpg"
+	end
 end
