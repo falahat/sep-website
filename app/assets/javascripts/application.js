@@ -12,12 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.turbolinks
 //= require skel.min
 //= require skel-layers.min
 //= require init
 //= require jquery-ui
 //= require jquery.modal
-//= require owl.carousel
 //= require_tree .
+//= require owl.carousel
+//= require turbolinks
+
 
