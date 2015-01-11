@@ -1,0 +1,10 @@
+<%= simple_form_for @brother, url: brothers_path do |f| %>
+  <%= f.input :name %>
+  <%= f.input :grad_year %>
+  <%= f.input :major %>
+  <%= f.association :pledge_class %>
+  <%= f.input :active %>
+  <%= f.input :description %>
+  <%= f.association :jobs , label_method: :role%>
+  <%= f.button :submit %>
+<% end %>

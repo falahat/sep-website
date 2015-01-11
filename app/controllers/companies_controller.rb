@@ -9,7 +9,8 @@ class CompaniesController < ApplicationController
   end
 
   def connections
-  	@companies = Company.all
+  	@companies = Company.where.not(logo_url: nil)
+    @not_pictured = Company.where(logo_url: nil)
   	@title = "Connections"
   end
 

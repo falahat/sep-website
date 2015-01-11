@@ -560,6 +560,8 @@
 				width: 90%;
 				height: 90%;
 				margin: 0em auto 2em auto;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			.wrapper.style5 .u3 {
@@ -572,15 +574,22 @@
 
 				.wrapper.style5 .image img {
 					
-					border: 5px solid;
+					border: 0px solid;
 					border-color: white;
+					margin-left: auto;
+					margin-right: auto;
+
 				}
 
-					.wrapper.style5 .image .rounded img {
-						border-radius: 50%;
-						border: 50px solid;
-						border-color: white;
-					}
+				.wrapper.style5 .image .rounded {
+
+					border-radius: 50%;
+					border-color: white;
+					border: 1px solid;
+					border-color: white;
+					margin-left: auto;
+					margin-right: auto;
+				}
 
 /* Header */
 
@@ -842,8 +851,8 @@
 	#team .image {
 		margin-top: 0em;
 		margin-bottom: 0em;
-		margin-left: 0em;
-		margin-right: 0em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.brother-container .2u {

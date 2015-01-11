@@ -10,71 +10,41 @@ require 'csv'
 
 
 alpha = PledgeClass.create(
-	name: "Alpha",
+	name: "alpha",
 	pledge_semester: DateTime.new(2011, 9, 1, 0, 0, 0)
 	)
 alpha.save
 beta = PledgeClass.create(
-	name: "Beta",
+	name: "beta",
 	pledge_semester: DateTime.new(2012, 1, 1, 0, 0, 0)
 	)
 beta.save
 gamma = PledgeClass.create(
-	name: "Gamma",
+	name: "gamma",
 	pledge_semester: DateTime.new(2012, 9, 1, 0, 0, 0)
 	)
 gamma.save
 delta = PledgeClass.create(
-	name: "Delta",
+	name: "delta",
 	pledge_semester: DateTime.new(2013, 1, 1, 0, 0, 0)
 	)
 delta.save
 epsilon = PledgeClass.create(
-	name: "Epsilon",
+	name: "epsilon",
 	pledge_semester: DateTime.new(2013, 9, 1, 0, 0, 0)
 	)
 epsilon.save
 zeta = PledgeClass.create(
-	name: "Zeta",
+	name: "zeta",
 	pledge_semester: DateTime.new(2014, 1, 1, 0, 0, 0)
 	)
 zeta.save
 eta = PledgeClass.create(
-	name: "Eta",
+	name: "eta",
+	is_best_pledge_class: true,
 	pledge_semester: DateTime.new(2014, 9, 1, 0, 0, 0)
 	)
 eta.save
-
-venture = Company.create(
-	name: "Bayes Impact",
-	description: "Bayes Impact is a super cool startup that went through YC. It's a nonprofit.",
-	logo_url: "companies/bayesimpact.png",
-	isVenture: true)
-venture.save
-venture = Company.create(
-	name: "Berkeley Tech Review",
-	description: "Journalism wooo.",
-	logo_url: "companies/btr.png",
-	isVenture: true)
-venture.save
-venture = Company.create(
-	name: "Cibo",
-	description: "Get fed.",
-	logo_url: "companies/cibo.png",
-	isVenture: true)
-venture.save
-venture = Company.create(
-	name: "Illuminating Indian Lives",
-	description: "Venture from Anant Agarwal.",
-	logo_url: "companies/btr.png",
-	isVenture: true)
-venture.save
-venture = Company.create(
-	name: "Caviar",
-	description: "Get everyone fed.",
-	logo_url: "companies/caviar.jpg",
-	isVenture: true)
-venture.save
 
 bmobilized = Company.create(
 	name: "bMobilized",
@@ -173,6 +143,25 @@ def getPledgeClass(name)
 	return pclass
 end
 
+def getCompany(name)
+	company = Company.find_by(name: name)
+	if company.nil?
+		company = Company.create(name: name)
+		url = String.new(name)
+		url.strip
+		url = url.gsub(" ", "").downcase
+		if (File.exists?("public/images/companies/" + url + ".jpg"))
+			company.logo_url = "companies/" + url + ".jpg"
+		elsif (File.exists?("public/images/companies/" + url + ".png"))
+			company.logo_url = "companies/" + url + ".png"
+		else
+			
+		end
+		company.save
+	end
+	return company
+end
+
 def loadActives
 	CSV.foreach("db/Raw/Actives.csv", :headers => true) do |row|
 		vals = row.to_hash
@@ -201,4 +190,71 @@ def loadActives
 
 end
 
+def loadVentures
+	CSV.foreach("db/Raw/Ventures.csv", :headers => true) do |row|
+		vals = row.to_hash
+		name = vals["Company or Project Name"]
+
+		company = getCompany(name)
+
+		link = vals["website"]
+
+		
+
+		brotherNames = vals["Name(s)"].split("&")
+		brothers = Array.new(brotherNames.size)
+		brotherNames.each do |broName|
+			puts broName
+			puts name
+			puts "HELLO +++++++++++++++++++++"
+			broName = broName.strip
+			brother = getBrother(broName)
+			job = Job.create(role: :Creator, company: company, brother: brother)
+			brother.jobs.push(job)
+			brothers.push(brother)
+		end
+
+		company.isVenture = true
+		company.description = vals["Description"]
+		company.website = vals["Website"]
+		company.notable = vals["Notable Achievements "]
+
+		company.logo_url = vals["Logo"]
+		if company.logo_url.nil?
+			url = String.new(name)
+			url.strip
+			url = url.gsub(" ", "").downcase
+			if (File.exists?("public/images/companies/" + url + ".jpg"))
+				company.logo_url = "companies/" + url + ".jpg"
+			elsif (File.exists?("public/images/companies/" + url + ".png"))
+				company.logo_url = "companies/" + url + ".png"
+			else
+				company.logo_url = "companies/" + url + ".jpg"
+			end
+		end
+		company.save
+	end
+end
+
+
+def loadJobs
+
+	CSV.foreach("db/Raw/Jobs.csv", :headers => true) do |row|
+		vals = row.to_hash
+
+		brotherName = vals["Name"]
+		companyName = vals["Company"]
+		role = vals["Position"]
+		location = vals["Location"]
+
+		brother = getBrother(brotherName)
+		company = getCompany(companyName)
+		job =  Job.create(role: role, location: location, brother: brother, company: company)
+		job.save
+	end
+end
+
+
 loadActives
+loadVentures
+loadJobs

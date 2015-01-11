@@ -11,3 +11,11 @@
 	</div>
 	 <span class="stretch" > </span>
 <% end %>
+
+<% @not_pictured.each_slice(4) do |row| %>
+	<div class="row">
+		<% row.each do |venture| %>
+			<span> <%= venture.name %> </span>
+		<% end %>
+	</div>
+<% end %>

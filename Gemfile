@@ -31,6 +31,8 @@ gem 'jquery-modal-rails'
 # databases
 gem 'pg'
 
+gem 'simple_form'
+
 gem "rails_12factor"
 # Unicorn
 gem 'unicorn'

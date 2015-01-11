@@ -1,21 +1,32 @@
 <h2> <%= @brother.name %> </h2>
-<h3> <span class="pledge-class"> 
-    <%=@brother.pledge_class.name + " " %> 
-     </span> 
+
+<h3> 
+    <% if !@brother.pledge_class.nil? %>
+        <span class="pledge-class"> 
+            <%=@brother.pledge_class.name%></span> 
+    <% end %>
     <% if !@brother.role.nil? %>
         <span class="role"> <%=@brother.role%></span> 
     <% end %>
 </h3>
 <div class="">
     <h1 class="decorated" > <span class='broprop'> School </span> </h1>
+
+
+    <% if !@brother.grad_year.nil? %>
     <div class='property'>
         <span class='broprop'> Graduating Class </span>
         <span class=''> <%= @brother.grad_year.year %> </span>
     </div>
+    <% end %>
+
+
+    <% if !@brother.major.nil? %>
     <div class='property'>
         <span class='broprop'> Major </span>
         <span class=''> <%= @brother.major%> </span>
     </div>
+    <% end %>
     
 
     <div class='property'>
@@ -24,6 +35,7 @@
         <h1 class="decorated" > <span class='broprop'> Experience </span> </h1>
         <% @brother.jobs.each do |job| %>
             <span> <%= job.role %> @ <%= job.company.name %> </span>
+            <br>
 
         <% end %>
     <hr>

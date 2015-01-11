@@ -6,6 +6,8 @@ class CreateCompanies < ActiveRecord::Migration
     	t.string :logo_url
     	t.boolean :isVenture
       t.references :jobs
+      t.text :notable
+      t.string :website
       t.timestamps null: false
     end
   end

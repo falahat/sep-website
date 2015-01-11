@@ -10,6 +10,7 @@ class CreateBrothers < ActiveRecord::Migration
       t.boolean :active
     	t.references :jobs
       t.references :pledge_class
+      t.string :note
 
      	t.timestamps null: false
     end

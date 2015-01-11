@@ -64,6 +64,7 @@ class BrothersController < ApplicationController
   end
 
   def edit
+    @brother = Brother.find(params[:id])
   end
 
   def create

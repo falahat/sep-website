@@ -2,6 +2,7 @@ class CreateJobs < ActiveRecord::Migration
   def change
     create_table :jobs do |t|
     	t.string :role
+      t.string :location
     	t.text :description
     	t.date :start
     	t.date :end 

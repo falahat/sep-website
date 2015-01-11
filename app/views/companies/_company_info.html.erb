@@ -9,13 +9,20 @@
         <span class=''> <%= @company.description %> </span>
     </div>
 
+    <% if !@company.notable.nil? %>
+        <h1 class="decorated" > <span class='broprop'> Notable Achievements </span> </h1>
+        <div class='property'>
+            <span class=''> <%= @company.notable %> </span>
+        </div>
+    <% end %>
+
     <div class='property'>
     <% if (!@company.brothers.empty?) %>
 
         <h1 class="decorated" > <span class='broprop'> Brothers </span> </h1>
         <% @company.brothers.each do |brother| %>
             <span> <%= brother.name %> </span>
-
+            <br>
         <% end %>
     <% end %>
     </div>

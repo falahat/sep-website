@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.boolean  "active"
     t.integer  "jobs_id"
     t.integer  "pledge_class_id"
+    t.string   "note"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
@@ -36,12 +37,15 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.string   "logo_url"
     t.boolean  "isVenture"
     t.integer  "jobs_id"
+    t.text     "notable"
+    t.string   "website"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   create_table "jobs", force: :cascade do |t|
     t.string   "role"
+    t.string   "location"
     t.text     "description"
     t.date     "start"
     t.date     "end"
@@ -56,6 +60,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.date     "pledge_semester"
     t.integer  "brothers_id"
     t.integer  "professional_event_id"
+    t.boolean  "is_best_pledge_class"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
   end
