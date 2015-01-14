@@ -5,7 +5,6 @@ class CompaniesController < ApplicationController
   def ventures
   	@companies = Company.where(isVenture: true)
   	@title = "Ventures"
-  	render 'connections'
   end
 
   def connections
