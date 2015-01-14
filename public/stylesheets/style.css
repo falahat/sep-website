@@ -977,3 +977,7 @@ tr:nth-child(odd) {
 table {
 	table-layout: fixed;
 }
+
+.pledge-class {
+	text-transform: capitalize;
+}
