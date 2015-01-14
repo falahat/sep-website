@@ -220,3 +220,8 @@
 		#banner span {
 			padding: 1em 0em;
 		}
+
+
+.optional {
+	display: none;
+}

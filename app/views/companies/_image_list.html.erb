@@ -1,0 +1,14 @@
+
+<% @companies.each_slice(4) do |row| %>
+	<div class="row">
+		<% row.each do |venture| %>
+			<div class="3u venture-box">
+				<%= link_to_modal(venture, class: 'image') do %>
+					<%= image_tag venture.logo_url, class: 'image bropic' %>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+	 <span class="stretch" > </span>
+<% end %>
+

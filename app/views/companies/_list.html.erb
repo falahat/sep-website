@@ -1,14 +1,21 @@
 
-<% @companies.each_slice(4) do |row| %>
-	<div class="row">
-		<% row.each do |venture| %>
-			<div class="3u venture-box">
-				<%= link_to_modal(venture, class: 'image') do %>
-					<%= image_tag venture.logo_url, class: 'image bropic' %>
-				<% end %>
-			</div>
+
+<% @categories.each do |category| %>
+	<% if !category[0].nil? and (category[0] != "Entrepreneurship") %>
+	<br>
+	<table>
+		
+		<h2 class=""> <span> <%= category[0] %> </span> </h2>
+		<br>
+		<% category[1].each do |job| %>
+			<tr> 
+				<td> <%= job.brother.name %> </td>
+				<td> <%= job.role %> </td>
+				<td> <%= job.company.name %> </td>
+				<td class="optional"> <%= job.location %> </td>
+			</ui>
 		<% end %>
-	</div>
-	 <span class="stretch" > </span>
+	</table>
+	<% end %>
 <% end %>
 

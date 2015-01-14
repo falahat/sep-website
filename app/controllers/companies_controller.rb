@@ -9,9 +9,11 @@ class CompaniesController < ApplicationController
   end
 
   def connections
-  	@companies = Company.where.not(logo_url: nil)
-    @not_pictured = Company.where(logo_url: nil)
-  	@title = "Connections"
+    @jobs = Job.all
+    @categories = @jobs.group_by{ |c| c.category}
+    puts @categories
+  	@companies = Company.all
+  	@title = "Careers"
   end
 
   def show

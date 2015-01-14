@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.text     "description"
     t.date     "start"
     t.date     "end"
+    t.string   "category"
     t.integer  "brother_id"
     t.integer  "company_id"
     t.datetime "created_at",  null: false

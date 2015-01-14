@@ -6,7 +6,7 @@ class CreateJobs < ActiveRecord::Migration
     	t.text :description
     	t.date :start
     	t.date :end 
-
+      t.string :category
 
     	t.references :brother
       t.references :company

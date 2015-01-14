@@ -251,7 +251,7 @@
 	ul.default {
 		margin: 0;
 		padding: 0;
-		list-style: none;
+		list-style: circle;
 	}
 
 		ul.default li {
@@ -555,7 +555,7 @@
 			color: white;
 		}
 
-			.wrapper.style5 .image {
+			.wrapper .image {
 				display: block;
 				width: 90%;
 				height: 90%;
@@ -564,7 +564,7 @@
 				margin-right: auto;
 			}
 
-			.wrapper.style5 .u3 {
+			.wrapper .u3 {
 				background: #82b440;
 				display: block;
 				width: 80%;
@@ -572,21 +572,20 @@
 				margin: 0em auto 2em auto;
 			}
 
-				.wrapper.style5 .image img {
+				.wrapper.image img {
 					
 					border: 0px solid;
-					border-color: white;
+					border-color: black;
 					margin-left: auto;
 					margin-right: auto;
 
 				}
 
-				.wrapper.style5 .image .rounded {
+				.wrapper .image .rounded {
 
 					border-radius: 50%;
-					border-color: white;
+					border-color: #000000;
 					border: 1px solid;
-					border-color: white;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -969,4 +968,12 @@
 
 .decorated {
 	height: 40px;
+}
+
+tr:nth-child(odd) {
+	background: #FFF
+}
+
+table {
+	table-layout: fixed;
 }

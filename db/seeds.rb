@@ -209,7 +209,7 @@ def loadVentures
 			puts "HELLO +++++++++++++++++++++"
 			broName = broName.strip
 			brother = getBrother(broName)
-			job = Job.create(role: :Creator, company: company, brother: brother)
+			job = Job.create(role: :Creator, category: :Entrepreneurship, company: company, brother: brother)
 			brother.jobs.push(job)
 			brothers.push(brother)
 		end
@@ -246,10 +246,11 @@ def loadJobs
 		companyName = vals["Company"]
 		role = vals["Position"]
 		location = vals["Location"]
+		category = vals["Category"]
 
 		brother = getBrother(brotherName)
 		company = getCompany(companyName)
-		job =  Job.create(role: role, location: location, brother: brother, company: company)
+		job =  Job.create(role: role, location: location, category: category, brother: brother, company: company)
 		job.save
 	end
 end

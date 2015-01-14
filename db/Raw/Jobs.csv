@@ -1,19 +1,40 @@
-Name,Company,Position,Location
-Akhil Katta,AlphaSense,Software Engineering Intern,"Helsinki, Finland "
-Amrit Ayalur,Lob,Software Engineering Intern,"San Francisco, CA"
-Douglas Boyle,Altai,Software Engineering Intern,"Hong Kong, HK"
-Hannah Huang,Raytheon,Intern,"Sunnyvale, CA"
-Kenneth Le,Continuuity,Software Engineering Intern,"Palo Alto, CA"
-Prashan Dharmasena,Xvolve,Backend Software Engineer,"San Francisco, CA"
-Prashan Dharmasena,Lockitron,Mobile Engineering Intern,"Mountain View, CA"
-Shun Yao,Sony,Mechanical Engeineering Internship,"Tokyo, Japan"
-Siddhant Dange,Shopkick,iOS Developer Intern,"Redwood City, CA"
-Yash Desai,Informatica,Software Engineering Intern,"Redwood City, CA"
-Bryan Tang,Think+ Ventures,Research Intern,"Palo Alto, CA"
-Claire Lei,The Urban Smith,Accessories Design Intern,"San Francisco, CA"
-Claire Lei,Merrill Lynch,Private Wealth Management Intern,"San Francisco, CA"
-Brian Truong,Salesforce,Software Engineering Intern,"San Francisco, CA"
-Sebastian Sadeghi,Ironbeam,Futures trading intern,"Chicago, IL"
-Tricia Seow,Bank of America Merrill Lynch,Investment Research Summer Analyst/Analyst,"San Francisco, CA"
-Grace Chen,Towers Watson,Health & Group Benefits Analyst,"San Francisco, CA"
-Stephen Shan,Alchemist Accelerator,Business Development Fellow,"San Francisco, CA"
+Name,Company,Position,Location,Category
+Akhil Katta,AlphaSense,Software Engineering Intern,"Helsinki, Finland ",Engineering
+Amrit Ayalur,Lob,Software Engineering Intern,"San Francisco, CA",Engineering
+Douglas Boyle,Altai,Software Engineering Intern,"Hong Kong, HK",Engineering
+Hannah Huang,Raytheon,Intern,"Sunnyvale, CA",Engineering
+Kenneth Le,Continuuity,Software Engineering Intern,"Palo Alto, CA",Engineering
+Prashan Dharmasena,Xvolve,Backend Software Engineer,"San Francisco, CA",Engineering
+Prashan Dharmasena,Lockitron,Mobile Engineering Intern,"Mountain View, CA",Engineering
+Shun Yao,Sony,Mechanical Engeineering Internship,"Tokyo, Japan",Engineering
+Siddhant Dange,Shopkick,iOS Developer Intern,"Redwood City, CA",Engineering
+Yash Desai,Informatica,Software Engineering Intern,"Redwood City, CA",Engineering
+Bryan Tang,Think+ Ventures,Research Intern,"Palo Alto, CA",Engineering
+Claire Lei,The Urban Smith,Accessories Design Intern,"San Francisco, CA",Engineering
+Claire Lei,Merrill Lynch,Private Wealth Management Intern,"San Francisco, CA",Engineering
+Brian Truong,Salesforce,Software Engineering Intern,"San Francisco, CA",Engineering
+Sebastian Sadeghi,Ironbeam,Futures trading intern,"Chicago, IL",Engineering
+Tricia Seow,Bank of America Merrill Lynch,Investment Research Summer Analyst/Analyst,"San Francisco, CA",Engineering
+Grace Chen,Towers Watson,Health & Group Benefits Analyst,"San Francisco, CA",Engineering
+Stephen Shan,Alchemist Accelerator,Business Development Fellow,"San Francisco, CA",Engineering
+Bryan Tang,GMR Web,Project Intern,"Tustin, CA",Marketing & Business Development
+Charles Yan,Quad,Markeing Analyst Intern,"Berkeley, CA",Marketing & Business Development
+Claire Lei,The Urban Smith,Intern,"San Francisco, CA",Marketing & Business Development
+Hannah Huang,Knowji,Marketing Intern,"Palo Alto, CA",Marketing & Business Development
+John Ababseh,ChimeCard,Customer & Business Relations Intern,"San Francisco, CA",Marketing & Business Development
+Kirtan Upadhyaya,Decisive Health Systems,Business Development Associate,"San Francisco, CA",Marketing & Business Development
+Rohan Punamia,Trumaker,Intern,"San Francisco, CA",Marketing & Business Development
+Sherry Chen,Spoon Rocket,Marketing Intern,"Berkeley, CA",Marketing & Business Development
+Vincent Tu,Uptempo Group,Project Manager and Market Intern,"Berkeley, CA",Marketing & Business Development
+Bianca Romulo,Narra Venture Capital,Venture Capital Summer Analyst,"Manila, Philippines",Finance
+Bryan Tang,Think+ Ventures,Research Assistant,"Palo Alto, CA",Finance
+Claire Lei,Merrill Lynch,Wealth Management Intern,"San Francisco, CA",Finance
+Jacqueline Cheong,Credit Agricole,Risk and Permanent Control Analysis Intern,"Hong Kong, HK",Finance
+Jasmine Stoy,Thomvest Ventures,Venture Capital Summer Analyst,"Redwood City, CA",Finance
+John Ababseh,Morgan Stanley,Intrapreneur ,"San Francisco, CA",Finance
+Rohan Punamia,Morgan Stanley,Datastructures Analyst,"San Francisco, CA",Finance
+Sherry Chen,Merrill Lynch,Wealth Management Intern,"San Francisco, CA",Finance
+Tom Yet,Bridgewater Associates,Management Associate Intern,"Westport, CT",Finance
+Grace Chen,Towers Watson,Consulting Intern,"San Francisco, CA",Consulting
+John Lee,Booz Allen Hamilton,Consulting Intern,"San Diego, CA",Consulting
+Lu Han,LookSharp (Internmatch),UX Design Intern,"San Francisco, CA",Design
