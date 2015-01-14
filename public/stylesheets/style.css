@@ -595,8 +595,12 @@
 	#header {
 		color: white;
 		height: 4em;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 1);
 	}
+
+		.homepage #header {
+			background: rgba(0, 0, 0, 0.4);
+		}
 
 		#header .container {
 			position: relative;
