@@ -981,3 +981,7 @@ table {
 .pledge-class {
 	text-transform: capitalize;
 }
+
+.brother-job-entry {
+	line-height: 120%;
+}

@@ -34,14 +34,15 @@
 
         <h1 class="decorated" > <span class='broprop'> Experience </span> </h1>
         <% @brother.jobs.each do |job| %>
-            <span> <%= job.role %> @ <%= job.company.name %> </span>
-            <br>
+            <div class="brother-job-entry">
+                <h1> <%= job.company.name %> </h1>
+                <span> <%= job.role %> </span>
+            </div>
+            <hr>
 
         <% end %>
     <hr>
-    <div class='property'>
-        <span class=''> <%= @brother.description %> </span>
-    </div>
+
     <% end %>
     </div>
 </div>
