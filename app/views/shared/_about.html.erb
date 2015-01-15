@@ -11,16 +11,18 @@
 We educate our brothers with the most comprehensive knowledge of the start-up ecosystem and venture processes and equip them with a concrete set of skills sourced from the diverse backgrounds of our house.</span>
 							</header>
 						</div>
-						<div class="8u owl-carousel">
-							<div class="testimonial">
-								<% Testimonial.all.each do |testimonial| %>
+						<div class="owl-carousel 8u">
+							<% @testimonials.each do |testimonial| %>
+								<div class="item">
 									<div>
-										<%= testimonial.text %>
+										<%= image_tag testimonial.image_url %>
+										<span class="testimonial">
+											<%= testimonial.text %>
+										</span>
+										
 									</div>
-									<%= image_tag testimonial.image_url%>
-								<% end %>
-							</div>
-						</div>
+								</div>
+							<% end %>
 					</div>
 				</section>
 			</div>

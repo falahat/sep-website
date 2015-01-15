@@ -106,7 +106,7 @@
 	}
 
 	header.major {
-		padding-bottom: 3em;
+		padding-bottom: 0em;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -756,7 +756,7 @@
 		}
 
 		#main #sidebar section {
-			margin-top: 4em;
+			margin-top: 2em;
 		}
 
 			#main #sidebar section:first-child {
@@ -764,7 +764,7 @@
 			}
 
 		#main #sidebar .major {
-			padding-bottom: 2em;
+			padding-bottom: 0em;
 		}
 
 			#main #sidebar .major h2 {
@@ -989,3 +989,4 @@ table {
 .brother-job-entry {
 	line-height: 120%;
 }
+

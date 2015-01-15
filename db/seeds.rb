@@ -124,8 +124,6 @@ event = RushEvent.create(
 event.save
 
 
-
-
 def getBrother(name)
 	user = Brother.find_by(name: name)
 	if user.nil?
@@ -256,6 +254,21 @@ def loadJobs
 end
 
 
+def loadTestimonials
+	CSV.foreach("db/Raw/Testimonials.csv", :headers => true) do |row|
+		vals = row.to_hash
+		name = vals["Name"]
+		role = vals["Role"]
+		top = vals["Top"]
+		image = "group/" + vals["Image"]
+		text = vals["Text"]
+		puts text
+		testimonial = Testimonial.create(author: name, author_role: role, verticle_alignment: top, image_url: image, text: text)
+		testimonial.save
+	end
+end
+
 loadActives
 loadVentures
 loadJobs
+loadTestimonials
