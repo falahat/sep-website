@@ -1,20 +1,27 @@
 
 .owl-item > div > *{
-	max-width: 100%;
+	width: 100%;
    max-height: 100%
 }
 
 .testimonial {
-	position: relative; 
-   	top: 120px; 
-   	left: 0; 
-   	width: 100%; 
-   	color: white; 
+   position: relative; 
+   left: 0; 
+   width: 100%; 
+   color: white; 
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
 }
+
+   .testimonial.top {
+      top: 105px; 
+   }
+
+   .testimonial.bottom {
+      top: -55px; 
+   }
 
 .owl-wrapper {
 	width: 100%;

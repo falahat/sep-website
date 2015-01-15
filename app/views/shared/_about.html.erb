@@ -14,13 +14,16 @@ We educate our brothers with the most comprehensive knowledge of the start-up ec
 						<div class="owl-carousel 8u">
 							<% @testimonials.each do |testimonial| %>
 								<div class="item">
-									<div>
-										<%= image_tag testimonial.image_url %>
-										<span class="testimonial">
+										<div class="testimonial top">
 											<%= testimonial.text %>
-										</span>
-										
-									</div>
+										</div>
+										<div class="testimonial top only-mobile">
+											<%= testimonial.author %> , <%= testimonial.author_role %>
+										</div>
+										<%= image_tag testimonial.image_url %>
+										<div class="testimonial bottom optional">
+											<%= testimonial.author %> , <%= testimonial.author_role %>
+										</div>
 								</div>
 							<% end %>
 					</div>

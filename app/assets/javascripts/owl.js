@@ -2,9 +2,10 @@ $(document).ready(function() {
  
   $(".owl-carousel").owlCarousel({
  
-      autoPlay: 5000, //Set AutoPlay to 3 seconds
  
-      items : 1
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
  
   });
  
