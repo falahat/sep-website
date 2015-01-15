@@ -5,3 +5,10 @@
 */
 
 /* Basic */
+
+.row {
+	text-align: center;
+	align-content: center;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}

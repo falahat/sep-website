@@ -106,7 +106,7 @@
 	}
 
 	header.major {
-		padding-bottom: 0em;
+		padding-bottom: 4em;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -469,7 +469,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 2em 0em 3em 0em;
+		padding: 5em 3em 3em 3em;
 	}
 
 		.wrapper.style1 {
@@ -527,8 +527,8 @@
 
 
 			.wrapper.style3 .container {
-				padding-left: 0em;
-				padding-right: 0em;
+				padding-left: 1em;
+				padding-right: 1em;
 			}
 
 			.wrapper.style3 p {
@@ -919,7 +919,6 @@
 
 .row {
 	text-align: center;
-	align-content: center;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
 }

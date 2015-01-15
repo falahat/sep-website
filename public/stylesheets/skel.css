@@ -105,7 +105,7 @@
 		/* Flush */
 
 			.row.flush > * {
-				padding-left: 0;
+				padding-left: 1em;
 			}
 
 			.row + .row.flush > * {

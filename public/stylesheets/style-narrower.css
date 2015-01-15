@@ -227,3 +227,8 @@
 .optional {
 	display: none;
 }
+
+
+.row {
+	text-align: center;
+}
