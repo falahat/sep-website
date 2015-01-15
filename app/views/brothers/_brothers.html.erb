@@ -14,14 +14,15 @@
             <% end %>
             <div class="brother-container">
 
-                <% row[:brothers].each_slice(6) do |row| %>
+                <% row[:brothers].each_slice(4) do |row| %>
                     <hr>
+                    <br>
                     <div class="row">
                         <% row.each do |bro| %>
                             <% if action_name.eql?("executive_board") %>
                                 <div class="3u">
                             <% else %>
-                                <div class="2u">
+                                <div class="3u">
                             <% end %>
                                 <%= link_to_modal( bro, id: "further", class: 'image rounded') do %>
                                     <%= image_tag(bro.image, class: 'bropic image rounded') %>

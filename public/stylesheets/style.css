@@ -557,8 +557,8 @@
 
 			.wrapper .image {
 				display: block;
-				width: 90%;
-				height: 90%;
+				width: 80%;
+				height: 80%;
 				margin: 0em auto 2em auto;
 				margin-left: auto;
 				margin-right: auto;
@@ -569,7 +569,7 @@
 				display: block;
 				width: 80%;
 				height: 80%;
-				margin: 0em auto 2em auto;
+				margin: 3em auto 2em auto;
 			}
 
 				.wrapper.image img {
