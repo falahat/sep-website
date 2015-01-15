@@ -5,7 +5,12 @@ $(document).ready(function() {
  
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true
+      singleItem:true,
+      autoHeight : true,
+      navigation: false,
+      dots: false,
+      pagination: false
+
  
   });
  
