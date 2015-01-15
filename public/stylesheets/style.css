@@ -996,3 +996,15 @@ table {
 .brother-container > .row {
 	text-align: center;
 }
+
+.info-box {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: .15s;
+}
+
+.info-box:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+

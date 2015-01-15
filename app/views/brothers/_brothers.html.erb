@@ -20,9 +20,9 @@
                     <div class="row">
                         <% row.each do |bro| %>
                             <% if action_name.eql?("executive_board") %>
-                                <div class="3u">
+                                <div class="3u info-box">
                             <% else %>
-                                <div class="3u">
+                                <div class="3u info-box">
                             <% end %>
                                 <%= link_to_modal( bro, id: "further", class: 'image rounded') do %>
                                     <%= image_tag(bro.image, class: 'bropic image rounded') %>
