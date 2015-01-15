@@ -5,6 +5,7 @@ $(document).ready(function() {
  
       slideSpeed : 300,
       paginationSpeed : 400,
+      autoPlay: true,
       singleItem:true,
       autoHeight : true,
       navigation: false,
