@@ -989,3 +989,6 @@ table {
 	line-height: 120%;
 }
 
+.center {
+	text-align: center;
+}
