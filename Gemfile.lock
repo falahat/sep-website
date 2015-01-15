@@ -192,7 +192,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   simple_form
   spring
-  turbolinks
   uglifier (>= 1.3.0)
   unicorn
   web-console (~> 2.0)

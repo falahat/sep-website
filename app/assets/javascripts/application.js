@@ -20,6 +20,5 @@
 //= require jquery.modal
 //= require_tree .
 //= require owl.carousel
-//= require turbolinks
 
 
