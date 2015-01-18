@@ -46,36 +46,20 @@ eta = PledgeClass.create(
 	)
 eta.save
 
-bmobilized = Company.create(
-	name: "bMobilized",
-	description: "Makes your sites mobile.",
-	logo_url: "companies/bmobilized.jpg",
-	isVenture: false)
-
 user = Brother.create(
 	name: "Aryan Falahatpisheh",
 	role: "Tech Chair",
 	pledge_class: eta,
 	grad_year: DateTime.new(2017, 5, 15, 20, 10, 0),
-	description: "Aryan is a cool dude I guess",
+	description: "Aryan made this website so he can have whatever he wants in his description.",
 	active: true,
 	major: "Computer Science")
-
-job = Job.create(
-	role: "Mobile Engineer Intern",
-	description: "Created a website builder in iOS.",
-	brother: user,
-	company: bmobilized
-	)
-user.jobs.push(job)
-user.save
 
 user = Brother.create(
 	name: "Jasmine Stoy",
 	role: "President",
 	pledge_class: gamma,
 	grad_year: DateTime.new(2016, 5, 15, 20, 10, 0),
-	description: "I agree that Aryan is cool",
 	image_url: "brothers/Jasmine-Stoy.jpg",
 	active: true,
 	major: "Business Administration")
@@ -86,11 +70,22 @@ user = Brother.create(
 	role: "Pledgemaster",
 	pledge_class: gamma,
 	grad_year: DateTime.new(2016, 05, 15, 20, 10, 0),
-	description: "Yeah no that guy's hot",
 	image_url: "brothers/Anant-Agarwal.jpg",
 	active: true,
 	major: "Economics")
 user.save
+
+Brother.create(
+	name: "Hannah Huang",
+	role: "Rush Chair")
+
+Brother.create(
+	name: "Prashan Dharmasena",
+	role: "Education Chair")
+
+Brother.create(
+	name: "Hannah Huang",
+	role: "Rush Chair")
 
 
 event = RushEvent.create(
