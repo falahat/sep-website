@@ -90,31 +90,40 @@ Brother.create(
 
 event = RushEvent.create(
 	name: "Meet the Chapter",
-	time: DateTime.new(2013, 9, 4, 6, 30, 0),
-	location: "Bancroft Hotel",
+	time: DateTime.new(2015, 1, 28, 18, 0, 0),
+	location: "Maude Fife",
 	attire: "Business Casual"
 	)
 event.save
 event = RushEvent.create(
-	name: "Social Night",
-	time: DateTime.new(2013, 9, 4, 6, 30, 0),
-	location: "Bancroft Hotel",
-	attire: "Business Casual"
+	name: "Strada Social",
+	time: DateTime.new(2015, 1, 29, 18, 30, 0),
+	location: "Caffe Strada",
+	attire: "Campus Social"
 	)
 event.save
 event = RushEvent.create(
-	name: "Individual Interviews",
-	time: DateTime.new(2013, 9, 4, 6, 30, 0),
-	location: "Bancroft Hotel",
-	attire: "Business Casual"
+	name: "Personal Interviews",
+	time: DateTime.new(2015, 1, 31, 6, 30, 0),
+	custom_date_text: "Saturday, Jan 31 & Sunday, Feb 1",
+	subtitle: "By Appointment"
 	)
 event.save
 
 event = RushEvent.create(
-	name: "Individual Interviews",
-	time: DateTime.new(2013, 9, 4, 6, 30, 0),
-	location: "Bancroft Hotel",
-	attire: "Business Casual"
+	name: "Group Interviews",
+	subtitle: "By Appointment",
+	time: DateTime.new(2015, 2, 2),
+	custom_date_text: "Monday, Feb 2"
+	)
+event.save
+
+event = RushEvent.create(
+	name: "Social Night",
+	subtitle: "By Invitation",
+	time: DateTime.new(2015, 2, 3),
+	custom_date_text: "Tuesday, Feb 3",
+	attire: "Campus Casual"
 	)
 event.save
 

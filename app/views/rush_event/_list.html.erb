@@ -1,27 +1,41 @@
-<div class="wrapper style4">
+<div class="wrapper style3">
 	<section class="container">
 		<header class="major">
 			<h2 class = "decorated"> <span> Spring 2015 Rush </span> </h2>
 			<span class="byline"></span>
 		</header>
-		<div class="row flush">
-			<% RushEvent.all.each do |event| %>
-				<div class="3u">
-										<br>
+		<% RushEvent.all.each_slice(3) do |row| %>
+			<div class="row flush">
+				<% row.each do |event| %>
 
-					<h2> <%= event.name %></h2>
-					<hr>
-					<span class="broprop"> Date </span>
-					<span> <%= event.time.strftime("%A, %b %-d") %></span>
-					<br>
-					<span class="broprop"> Time </span>
-					<span> <%= event.time.strftime("%r") %></span>
-					<br>
-					<span class="broprop"> Location </span>
-					<span> <%= event.location %></span>
-				</div>
+					<div class="4u">
 
-			<% end %>
-		</div>
+						<h2> <%= event.name %></h2>
+						<% if !event.subtitle.nil? %>
+							<span class = ""> <%= event.subtitle %></span>
+							<br>
+						<% end %>
+
+						<span class="broprop"> Date </span>
+						<% if event.custom_date_text %>
+							<span> <%= event.custom_date_text %></span>
+						<% else %>
+							<span> <%= event.time.strftime("%A, %b %-d") %></span>
+							<br>
+							<span class="broprop"> Time </span>
+							<span> <%= event.time.strftime("%r") %></span>
+						<% end %>
+
+						<br>
+
+						<% if !event.location.nil? %>
+							<span class="broprop"> Location </span>
+							<span> <%= event.location %></span>
+						<% end %>
+					</div>
+
+				<% end %>
+			</div>
+		<% end %>
 	</section>
 </div>

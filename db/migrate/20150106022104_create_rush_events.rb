@@ -4,6 +4,7 @@ class CreateRushEvents < ActiveRecord::Migration
       t.string :name
       t.string :attire
       t.text :description
+      t.string :custom_date_text
       t.string :subtitle
       t.date :time
       t.string :location
