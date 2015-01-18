@@ -15,14 +15,14 @@ We educate our brothers with the most comprehensive knowledge of the start-up ec
 							<% @testimonials.each do |testimonial| %>
 								<div class="item">
 										<div class="testimonial top">
-											<%= testimonial.text %>
+											" <%= testimonial.text %> "
 										</div>
 										<div class="testimonial top only-mobile">
 											<%= testimonial.author %> , <%= testimonial.author_role %>
 										</div>
 										<%= image_tag testimonial.image_url , class: :optional %>
 										<div class="testimonial bottom optional">
-											<%= testimonial.author %> , <%= testimonial.author_role %>
+											- <%= testimonial.author %>  ,  <%= testimonial.author_role %>
 										</div>
 								</div>
 							<% end %>
