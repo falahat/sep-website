@@ -45,7 +45,12 @@ class BrothersController < ApplicationController
   end
 
   def executive_board
-    @brothers = Brother.where.not(role: nil)
+    @brothers = Array.new
+    
+    @brothers.push Brother.where(role: "External Vice President").first
+    @brothers.push Brother.where(role: "President").first
+    @brothers.push Brother.where(role: "Internal Vice President").first
+    @brothers.push Brother.where(role: "Operations").first
     @rows = Array.new
     @byline = nil
     row = Hash.new

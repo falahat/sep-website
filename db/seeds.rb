@@ -82,6 +82,16 @@ Brother.create(
 Brother.create(
 	name: "Prashan Dharmasena",
 	role: "Education Chair").save
+Brother.create(
+	name: "Claire Lei",
+	role: "Operations").save
+Brother.create(
+	name: "Rohan Punamia",
+	role: "External Vice President").save
+
+Brother.create(
+	name: "Sherry Chen",
+	role: "Internal Vice President").save
 
 
 
