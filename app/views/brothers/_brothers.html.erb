@@ -2,11 +2,6 @@
 <!-- Team -->
 <div class="wrapper style4">
     <section id="team" class="container">
-        <header class="major">
-            <% if !@byline.nil? %>
-                <span class="byline"><%= @byline %></span>
-            <% end %>
-        </header>
 
         <% @rows.each do |row| %>
             <% if !row[:title].nil? %>
