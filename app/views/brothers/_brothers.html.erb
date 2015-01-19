@@ -14,6 +14,7 @@
                     <br>
                     <div class="row">
                         <% row.each do |bro| %>
+                            <% if !bro.nil? %>
                             <% if action_name.eql?("executive_board") %>
                                 <div class="3u info-box">
                             <% else %>
@@ -30,6 +31,7 @@
                                     <h1> <%= bro.name %> </h1>
                                 <% end %>
                             </div>
+                            <% end %>
                         <% end %>
                     </div>
                 <% end %>
