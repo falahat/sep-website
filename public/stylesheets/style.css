@@ -946,7 +946,7 @@
 
 /* headlines with lines */
 .decorated{
-
+	padding-top: 0.1em;
      overflow: hidden;
      text-align: center;
  }
@@ -974,11 +974,16 @@
 }
 
 tr:nth-child(odd) {
-	background: #FFF
+	background: #F0F0F0
 }
+
 
 table {
 	table-layout: fixed;
+}
+
+.name-column {
+	width : 200px;
 }
 
 .pledge-class {
@@ -1008,3 +1013,7 @@ table {
 	filter: grayscale(0%);
 }
 
+
+.brorow {
+	margin-top: 1.5em;
+}

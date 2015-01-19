@@ -232,3 +232,8 @@
 .row {
 	text-align: center;
 }
+
+
+.name-column {
+	width : auto;
+}

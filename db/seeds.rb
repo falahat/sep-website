@@ -81,11 +81,9 @@ Brother.create(
 
 Brother.create(
 	name: "Prashan Dharmasena",
-	role: "Education Chair")
+	role: "Education Chair").save
 
-Brother.create(
-	name: "Hannah Huang",
-	role: "Rush Chair")
+
 
 
 event = RushEvent.create(

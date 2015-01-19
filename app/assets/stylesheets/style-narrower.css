@@ -228,3 +228,6 @@
 	display: none;
 }
 
+.name-column {
+	width : auto;
+}
