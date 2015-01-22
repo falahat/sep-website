@@ -67,7 +67,6 @@ user.save
 
 user = Brother.create(
 	name: "Anant Agarwal",
-	role: "Pledgemaster",
 	pledge_class: gamma,
 	grad_year: DateTime.new(2016, 05, 15, 20, 10, 0),
 	image_url: "brothers/Anant-Agarwal.jpg",
@@ -219,7 +218,7 @@ def loadVentures
 			puts "HELLO +++++++++++++++++++++"
 			broName = broName.strip
 			brother = getBrother(broName)
-			job = Job.create(role: :Creator, category: :Entrepreneurship, company: company, brother: brother)
+			job = Job.create(role: :Founder, category: :Entrepreneurship, company: company, brother: brother)
 			brother.jobs.push(job)
 			brothers.push(brother)
 		end
