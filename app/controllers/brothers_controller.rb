@@ -46,11 +46,27 @@ class BrothersController < ApplicationController
 
   def executive_board
     @brothers = Array.new
-    
-    @brothers.push Brother.where(role: "External Vice President").first
-    @brothers.push Brother.where(role: "President").first
-    @brothers.push Brother.where(role: "Internal Vice President").first
-    @brothers.push Brother.where(role: "Operations").first
+
+    toAdd = Brother.where(role: "President").first
+    if !toAdd.nil?
+      @brothers.push toAdd
+    end
+
+    toAdd = Brother.where(role: "External Vice President").first
+    if !toAdd.nil?
+      @brothers.push toAdd
+    end
+
+    toAdd = Brother.where(role: "Internal Vice President").first
+    if !toAdd.nil?
+      @brothers.push toAdd
+    end
+
+    toAdd = Brother.where(role: "Operations Vice President").first
+    if !toAdd.nil?
+      @brothers.push toAdd
+    end
+
     @rows = Array.new
     @byline = nil
     row = Hash.new

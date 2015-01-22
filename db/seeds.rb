@@ -83,7 +83,7 @@ Brother.create(
 	role: "Education Chair").save
 Brother.create(
 	name: "Claire Lei",
-	role: "Operations").save
+	role: "Operations Vice President").save
 Brother.create(
 	name: "Rohan Punamia",
 	role: "External Vice President").save
