@@ -18,4 +18,9 @@ class CompaniesController < ApplicationController
   def show
     @company = Company.find(params[:id])
   end
+
+  private
+  def rush_event_params
+      params.require(:company).permit(:name, :description, :logo_url, :isVenture, :jobs, :notable, :website)
+  end
 end

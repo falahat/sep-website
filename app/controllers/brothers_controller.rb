@@ -91,12 +91,12 @@ class BrothersController < ApplicationController
   def create
     @brother = Brother.new(brother_params)
  
-    @brother.save
-    redirect_to @brother
+    # @brother.save
+    # redirect_to @brother
   end
 
   def update
-    @brother = Brother.find(brother_params)
+    # @brother = Brother.find(brother_params)
   end
 
   def destroy
@@ -113,5 +113,5 @@ class BrothersController < ApplicationController
   private
   def brother_params
       params.require(:brother).permit(:name, :text, :grad_year, :pledge_class, :jobs, :companies)
-    end
+  end
 end
