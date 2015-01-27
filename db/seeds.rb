@@ -278,7 +278,7 @@ def loadTestimonials
 	end
 end
 
-# loadActives
-# loadVentures
-# loadJobs
-# loadTestimonials
+loadActives
+loadVentures
+loadJobs
+loadTestimonials
