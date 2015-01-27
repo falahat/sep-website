@@ -17,13 +17,13 @@
 						<% end %>
 
 						<span class="broprop"> Date </span>
-						<% if event.custom_date_text %>
-							<span> <%= event.custom_date_text %></span>
-						<% else %>
-							<span> <%= event.time.strftime("%A, %b %-d") %></span>
+						<% if event.date %>
+							<span> <%= event.date %></span>
+						<% end %>
+						<% if !event.time.nil? %>
 							<br>
 							<span class="broprop"> Time </span>
-							<span> <%= event.time.strftime("%r") %></span>
+							<span> <%= event.time %></span>
 						<% end %>
 
 						<br>

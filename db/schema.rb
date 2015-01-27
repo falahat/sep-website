@@ -79,12 +79,12 @@ ActiveRecord::Schema.define(version: 20150106034029) do
     t.string   "name"
     t.string   "attire"
     t.text     "description"
-    t.string   "custom_date_text"
+    t.string   "date"
     t.string   "subtitle"
-    t.date     "time"
+    t.string   "time"
     t.string   "location"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "testimonials", force: :cascade do |t|

@@ -96,23 +96,24 @@ Brother.create(
 
 
 event = RushEvent.create(
-	name: "Meet the Chapter",
-	time: DateTime.new(2015, 1, 28, 18, 0, 0),
+	name: "Meet the Chapppter",
+	time: "6:30 PM",
+	date: "Wednesday, January 28",
 	location: "Maude Fife",
 	attire: "Business Casual"
 	)
 event.save
 event = RushEvent.create(
 	name: "Strada Social",
-	time: DateTime.new(2015, 1, 29, 18, 30, 0),
+	time: "6:30 PM",
+	date: "Thursday, January 29",
 	location: "Caffe Strada",
 	attire: "Campus Social"
 	)
 event.save
 event = RushEvent.create(
 	name: "Personal Interviews",
-	time: DateTime.new(2015, 1, 31, 6, 30, 0),
-	custom_date_text: "Saturday, Jan 31 & Sunday, Feb 1",
+	date: "Saturday, Jan 31 & Sunday, Feb 1",
 	subtitle: "By Appointment"
 	)
 event.save
@@ -120,16 +121,14 @@ event.save
 event = RushEvent.create(
 	name: "Group Interviews",
 	subtitle: "By Appointment",
-	time: DateTime.new(2015, 2, 2),
-	custom_date_text: "Monday, Feb 2"
+	date: "Monday, Feb 2"
 	)
 event.save
 
 event = RushEvent.create(
 	name: "Social Night",
 	subtitle: "By Invitation",
-	time: DateTime.new(2015, 2, 3),
-	custom_date_text: "Tuesday, Feb 3",
+	date: "Tuesday, Feb 3",
 	attire: "Campus Casual"
 	)
 event.save
@@ -279,7 +278,7 @@ def loadTestimonials
 	end
 end
 
-loadActives
-loadVentures
-loadJobs
-loadTestimonials
+# loadActives
+# loadVentures
+# loadJobs
+# loadTestimonials
