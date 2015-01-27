@@ -8,7 +8,7 @@ class CompaniesController < ApplicationController
   end
 
   def connections
-    @jobs = Job.joins(:brother).where(:brother => {:active => true}).all
+    @jobs = Job.all
     @categories = @jobs.group_by{ |c| c.category}
     puts @categories
   	@companies = Company.all
