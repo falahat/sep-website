@@ -96,7 +96,7 @@ Brother.create(
 
 
 event = RushEvent.create(
-	name: "Meet the Chapppter",
+	name: "Meet the Chapter",
 	time: "6:30 PM",
 	date: "Wednesday, January 28",
 	location: "Maude Fife",
