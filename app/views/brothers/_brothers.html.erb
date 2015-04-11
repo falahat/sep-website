@@ -3,6 +3,11 @@
 <div class="wrapper style4">
     <section id="team" class="container">
 
+        <% if !@header.nil? %>
+            <header class="major"> 
+                <h2> <%= @header %> </h2> 
+            </header>
+        <% end %>
         <% @rows.each do |row| %>
             <% if !row[:title].nil? %>
                 <h3 class="decorated"> <span> <%= row[:title] %> </span> </h3>

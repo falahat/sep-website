@@ -2,14 +2,20 @@ class BrothersController < ApplicationController
   def index
     @brothers = Brother.all
     @rows = Array.new
+
+    @header = "All Brothers"
     @byline = nil
+
     row = Hash.new
     row[:brothers] = @brothers
-    row[:title] = "All"
+    row[:title] = nil
     @rows.push(row)
   end
 
   def pledge_classes
+
+    @header = "Pledge Classes"
+
     classes = PledgeClass.all
     @rows = Array.new
     classes.each do |pclass|
@@ -25,6 +31,9 @@ class BrothersController < ApplicationController
   end
 
   def actives
+
+    @header = "2015 Active Brothers"
+
     pictured = Brother.where.not(image_url: nil).where(active: true)
     not_pictured = Brother.where(image_url: nil).where(active: true)
     @rows = Array.new
@@ -46,6 +55,7 @@ class BrothersController < ApplicationController
 
   def executive_board
     @brothers = Array.new
+    @header = "Executive Board"
 
     toAdd = Brother.where(role: "President").first
     if !toAdd.nil?
@@ -71,7 +81,7 @@ class BrothersController < ApplicationController
     @byline = nil
     row = Hash.new
     row[:brothers] = @brothers
-    row[:title] = "Executive Board"
+    row[:title] = nil
     @rows.push(row)
     render("index")
   end
