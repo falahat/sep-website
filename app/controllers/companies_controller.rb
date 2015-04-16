@@ -24,7 +24,7 @@ class CompaniesController < ApplicationController
   end
 
   private
-  def rush_event_params
+  def company_params
       params.require(:company).permit(:name, :description, :logo_url, :isVenture, :jobs, :notable, :website)
   end
 end
