@@ -1,38 +1,65 @@
-Name,Company,Position,Location,Category
-Akhil Katta,AlphaSense,Software Engineering Intern,"Helsinki, Finland ",Engineering
-Aryan Falahatpisheh,bMobilized,Mobile Engineering Intern,"New York, NY ",Engineering
-Amrit Ayalur,Lob,Software Engineering Intern,"San Francisco, CA",Engineering
-Douglas Boyle,Altai,Software Engineering Intern,"Hong Kong, HK",Engineering
-Hannah Huang,Raytheon,Intern,"Sunnyvale, CA",Engineering
-Kenneth Le,Continuuity,Software Engineering Intern,"Palo Alto, CA",Engineering
-Prashan Dharmasena,Xvolve,Backend Software Engineer,"San Francisco, CA",Engineering
-Prashan Dharmasena,Lockitron,Mobile Engineering Intern,"Mountain View, CA",Engineering
-Shun Yao,Sony,Mechanical Engeineering Internship,"Tokyo, Japan",Engineering
-Siddhant Dange,Shopkick,iOS Developer Intern,"Redwood City, CA",Engineering
-Yash Desai,Informatica,Software Engineering Intern,"Redwood City, CA",Engineering
-Bryan Tang,Think+ Ventures,Research Intern,"Palo Alto, CA",Engineering
-Claire Lei,The Urban Smith,Accessories Design Intern,"San Francisco, CA",Design
-Claire Lei,Bank of America Merrill Lynch,Private Wealth Management Intern,"San Francisco, CA",Finance
-Brian Truong,Salesforce,Software Engineering Intern,"San Francisco, CA",Engineering
-Sebastian Sadeghi,Ironbeam,Futures trading intern,"Chicago, IL",Finance
-Tricia Seow,Bank of America Merrill Lynch,Investment Research Summer Analyst,"San Francisco, CA",Finance
-Grace Chen,Towers Watson,Health & Group Benefits Analyst,"San Francisco, CA",Consulting
-Stephen Shan,Alchemist Accelerator,Business Development Fellow,"San Francisco, CA",Marketing & Business Development
-Bryan Tang,GMR Web,Project Intern,"Tustin, CA",Marketing & Business Development
-Charles Yan,Quad,Markeing Analyst Intern,"Berkeley, CA",Marketing & Business Development
-Hannah Huang,Knowji,Marketing Intern,"Palo Alto, CA",Marketing & Business Development
-John Ababseh,ChimeCard,Customer & Business Relations Intern,"San Francisco, CA",Marketing & Business Development
-Kirtan Upadhyaya,Decisive Health Systems,Business Development Associate,"San Francisco, CA",Marketing & Business Development
-Rohan Punamia,Trumaker,Intern,"San Francisco, CA",Marketing & Business Development
-Sherry Chen,Spoon Rocket,Marketing Intern,"Berkeley, CA",Marketing & Business Development
-Vincent Tu,Uptempo Group,Project Manager and Market Intern,"Berkeley, CA",Marketing & Business Development
-Bianca Romulo,Narra Venture Capital,Venture Capital Summer Analyst,"Manila, Philippines",Finance
-Bryan Tang,Think+ Ventures,Research Assistant,"Palo Alto, CA",Finance
-Jacqueline Cheong,Credit Agricole,Risk and Permanent Control Analysis Intern,"Hong Kong, HK",Finance
-Jasmine Stoy,Thomvest Ventures,Venture Capital Summer Analyst,"Redwood City, CA",Finance
-John Ababseh,Morgan Stanley,Intrapreneur ,"San Francisco, CA",Finance
-Rohan Punamia,Morgan Stanley,Datastructures Analyst,"San Francisco, CA",Finance
-Sherry Chen,Bank of America Merrill Lynch,Wealth Management Intern,"San Francisco, CA",Finance
-Tom Yet,Bridgewater Associates,Management Associate Intern,"Westport, CT",Finance
-John Lee,Booz Allen Hamilton,Consulting Intern,"San Diego, CA",Consulting
-Lu Han,LookSharp (Internmatch),UX Design Intern,"San Francisco, CA",Design
+Name,Company,Position,Location,Category,Start,End,Type
+Akhil Katta,AlphaSense,Software Engineering Intern,"Helsinki, Finland ",Engineering,05/20/14,08/20/14,Internship
+Aryan Falahatpisheh,bMobilized,Mobile Engineering Intern,"New York, NY ",Engineering,05/20/14,08/20/14,Internship
+Amrit Ayalur,Lob,Software Engineering Intern,"San Francisco, CA",Engineering,05/20/14,08/20/14,Internship
+Douglas Boyle,Altai,Software Engineering Intern,"Hong Kong, HK",Engineering,05/20/14,08/20/14,Internship
+Hannah Huang,Raytheon,Intern,"Sunnyvale, CA",Engineering,05/20/14,08/20/14,Internship
+Kenneth Le,Continuuity,Software Engineering Intern,"Palo Alto, CA",Engineering,05/20/14,08/20/14,Internship
+Prashan Dharmasena,Xvolve,Backend Software Engineer,"San Francisco, CA",Engineering,05/20/14,08/20/14,Internship
+Prashan Dharmasena,Lockitron,Mobile Engineering Intern,"Mountain View, CA",Engineering,05/20/14,08/20/14,Internship
+Shun Yao,Sony,Mechanical Engeineering Internship,"Tokyo, Japan",Engineering,05/20/14,08/20/14,Internship
+Siddhant Dange,Shopkick,iOS Developer Intern,"Redwood City, CA",Engineering,05/20/14,08/20/14,Internship
+Yash Desai,Informatica,Software Engineering Intern,"Redwood City, CA",Engineering,05/20/14,08/20/14,Internship
+Bryan Tang,Think+ Ventures,Research Intern,"Palo Alto, CA",Engineering,05/20/14,08/20/14,Internship
+Claire Lei,The Urban Smith,Accessories Design Intern,"San Francisco, CA",Design,05/20/14,08/20/14,Internship
+Claire Lei,Bank of America Merrill Lynch,Private Wealth Management Intern,"San Francisco, CA",Finance,05/20/14,08/20/14,Internship
+Brian Truong,Salesforce,Software Engineering Intern,"San Francisco, CA",Engineering,05/20/14,08/20/14,Internship
+Sebastian Sadeghi,Ironbeam,Futures trading intern,"Chicago, IL",Finance,05/20/14,08/20/14,Internship
+Tricia Seow,Bank of America Merrill Lynch,Investment Research Summer Analyst,"San Francisco, CA",Finance,05/20/14,08/20/14,Internship
+Grace Chen,Towers Watson,Health & Group Benefits Analyst,"San Francisco, CA",Consulting,05/20/14,08/20/14,Internship
+Stephen Shan,Alchemist Accelerator,Business Development Fellow,"San Francisco, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Bryan Tang,GMR Web,Project Intern,"Tustin, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Charles Yan,Quad,Markeing Analyst Intern,"Berkeley, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Hannah Huang,Knowji,Marketing Intern,"Palo Alto, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+John Ababseh,ChimeCard,Customer & Business Relations Intern,"San Francisco, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Kirtan Upadhyaya,Decisive Health Systems,Business Development Associate,"San Francisco, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Rohan Punamia,Trumaker,Intern,"San Francisco, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Sherry Chen,Spoon Rocket,Marketing Intern,"Berkeley, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Vincent Tu,Uptempo Group,Project Manager and Market Intern,"Berkeley, CA",Marketing & Business Development,05/20/14,08/20/14,Internship
+Bianca Romulo,Narra Venture Capital,Venture Capital Summer Analyst,"Manila, Philippines",Finance,05/20/14,08/20/14,Internship
+Bryan Tang,Think+ Ventures,Research Assistant,"Palo Alto, CA",Finance,05/20/14,08/20/14,Internship
+Jacqueline Cheong,Credit Agricole,Risk and Permanent Control Analysis Intern,"Hong Kong, HK",Finance,05/20/14,08/20/14,Internship
+Jasmine Stoy,Thomvest Ventures,Venture Capital Summer Analyst,"Redwood City, CA",Finance,05/20/14,08/20/14,Internship
+John Ababseh,Morgan Stanley,Intrapreneur ,"San Francisco, CA",Finance,05/20/14,08/20/14,Internship
+Rohan Punamia,Morgan Stanley,Datastructures Analyst,"San Francisco, CA",Finance,05/20/14,08/20/14,Internship
+Sherry Chen,Bank of America Merrill Lynch,Wealth Management Intern,"San Francisco, CA",Finance,05/20/14,08/20/14,Internship
+Tom Yet,Bridgewater Associates,Management Associate Intern,"Westport, CT",Finance,05/20/14,08/20/14,Internship
+John Lee,Booz Allen Hamilton,Consulting Intern,"San Diego, CA",Consulting,05/20/14,08/20/14,Internship
+Lu Han,LookSharp (Internmatch),UX Design Intern,"San Francisco, CA",Design,05/20/14,08/20/14,Internship
+Alex Akiyama,San Diego Aviators,Chief Operating Officer,San Diego ,Marketing & Business Development,05/20/14,,Full-Time
+Andy Yang,Fairmont Peace Hotel,Sales Coordinator,"Shanghai, China",Marketing & Business Development,05/20/14,,Full-Time
+Bill Kuang,LinkdIn,Software Engineer,San Francisco ,Engineering,05/20/14,,Full-Time
+Charles Li,Morgan Stanley,Investment Banking Analyst,San Francisco ,Finance,05/20/14,,Full-Time
+Dana Zhang,Wells Fargo International,Country Officer ,Hong Kong,Finance,05/20/14,,Full-Time
+David Zeng,Centerview Partners,Investment Banking Analyst,San Francisco ,Finance,05/20/14,,Full-Time
+Emily Kuan,Mercer ,Mobility COE Analyst ,San Francisco ,Marketing & Business Development,05/20/14,,Full-Time
+Jenny Mi,Accenture,Senior Business Analyst,San Francisco ,Marketing & Business Development,05/20/14,,Full-Time
+Kathy Zheng,Patreon,Designer ,San Francisco ,Design,05/20/14,,Full-Time
+Richard Zhang,Mellon Capital,Portfolio Analyst,San Francisco,Finance,05/20/14,,Full-Time
+Sorcha Evenhouse,Analysis Group,Analyst ,Menlo Park,Finance,05/20/14,,Full-Time
+Tiffany Lin,SPRITZ,Account Manager ,San Francisco,Finance,05/20/14,,Full-Time
+Casey Finnerty,TriSep Corporation,Technical Service Engineer,Santa Barbra ,Engineering,05/20/14,,Full-Time
+Christina Oh,Taulia,Marketing Manager,San Francisco,Marketing & Business Development,05/20/14,,Full-Time
+Heather Hui,"Allana Buick & Bers, Inc.",Marketing Coordinator,San Francisco,Marketing & Business Development,05/20/14,,Full-Time
+Katarina Du,UBS International Wealth Management,Associate,San Francisco,Finance,05/20/14,,Full-Time
+Perry Yee,Cisco,Software Engineer,San Francisco ,Engineering,05/20/14,,Full-Time
+Praneet Wadge,Scalr,Product Manager,San Francisco ,Marketing & Business Development,05/20/14,,Full-Time
+Ron Di,Indiegogo,Data Analyst,San Francisco,Engineering,05/20/14,,Full-Time
+Spencer Poff,ResolutionTube,Software Engineer,San Francisco,Engineering,05/20/14,,Full-Time
+Yuner Teh,Restaurant Par Andre Pte. Ltd.,Marketing and Communications Manager,Singapore,Marketing & Business Development,05/20/14,,Full-Time
+Marcus Gedai,Morgan Stanley,Analyst,London,Finance,05/20/14,,Full-Time
+Victor Nadbitov,Grant Thornton LLP,Forensic and Valuation Services Associate,San Francisco,Finance,05/20/14,,Full-Time
+Sylvia Lin,Workday,Associate Product Manager,San Francisco,Marketing & Business Development,05/20/14,,Full-Time
+Shubin Li,JP Morgan,Associate,New York,Finance,05/20/14,,Full-Time
+Derrick Cheng,Facebook,Software Engineer,Menlo,Engineering,05/20/14,,Full-Time
+Riaz Ahmed,Bose,Mechanical Engineer Co-op,San Francisco,Engineering,05/20/14,,Full-Time
