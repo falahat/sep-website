@@ -47,7 +47,7 @@ eta = PledgeClass.create(
 eta.save
 
 user = Brother.create(
-	name: "Aryan Falahatpisheh",
+	name: "Evan Katz",
 	role: "Tech Chair",
 	pledge_class: eta,
 	grad_year: DateTime.new(2017, 5, 15, 20, 10, 0),
@@ -57,10 +57,18 @@ user = Brother.create(
 
 user = Brother.create(
 	name: "Jasmine Stoy",
-	role: "President",
 	pledge_class: gamma,
 	grad_year: DateTime.new(2016, 5, 15, 20, 10, 0),
 	image_url: "brothers/Jasmine-Stoy.jpg",
+	active: true,
+	major: "Business Administration")
+user.save
+
+user = Brother.create(
+	name: "Rohan Punamia",
+	role: "President",
+	pledge_class: zeta,
+	grad_year: DateTime.new(2017, 5, 15, 20, 10, 0),
 	active: true,
 	major: "Business Administration")
 user.save
@@ -75,21 +83,21 @@ user = Brother.create(
 user.save
 
 Brother.create(
-	name: "Hannah Huang",
+	name: "Nicole Huxtable",
 	role: "Rush Chair")
 
 Brother.create(
-	name: "Prashan Dharmasena",
+	name: "Amrit Ayalur",
 	role: "Education Chair").save
 Brother.create(
-	name: "Claire Lei",
+	name: "Raylene Chew",
 	role: "Operations Vice President").save
 Brother.create(
-	name: "Rohan Punamia",
+	name: "Alka Murthy",
 	role: "External Vice President").save
 
 Brother.create(
-	name: "Sherry Chen",
+	name: "Annhien Nguyen",
 	role: "Internal Vice President").save
 
 
@@ -98,37 +106,45 @@ Brother.create(
 event = RushEvent.create(
 	name: "Meet the Chapter",
 	time: "6:30 PM",
-	date: "Wednesday, January 28",
-	location: "Maude Fife",
+	date: "Wednesday, September 2",
+	location: "Bancroft Hotel",
 	attire: "Business Casual"
 	)
 event.save
 event = RushEvent.create(
 	name: "Strada Social",
 	time: "6:30 PM",
-	date: "Thursday, January 29",
+	date: "Thursday, September 3",
 	location: "Caffe Strada",
 	attire: "Campus Social"
 	)
 event.save
 event = RushEvent.create(
 	name: "Personal Interviews",
-	date: "Saturday, Jan 31 & Sunday, Feb 1",
+	date: "Saturday, September 5 & Sunday September 6",
 	subtitle: "By Appointment"
 	)
 event.save
 
 event = RushEvent.create(
-	name: "Group Interviews",
-	subtitle: "By Appointment",
-	date: "Monday, Feb 2"
+	name: "Individual Coffee Chats",
+	subtitle: "By Invitation",
+	date: "Monday, September 7",
+	attire: "Campus Casual"
 	)
 event.save
 
 event = RushEvent.create(
-	name: "Social Night",
+	name: "Group Interviews",
 	subtitle: "By Invitation",
-	date: "Tuesday, Feb 3",
+	date: "Tuesday, September 8th"
+	)
+event.save
+
+event = RushEvent.create(
+	name: "Final Rush Event",
+	subtitle: "By Invitation",
+	date: "Wednesday, September 9",
 	attire: "Campus Casual"
 	)
 event.save
