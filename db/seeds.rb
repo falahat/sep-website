@@ -121,7 +121,7 @@ event = RushEvent.create(
 event.save
 event = RushEvent.create(
 	name: "Personal Interviews",
-	date: "Saturday, September 5 & Sunday September 6",
+	date: "September 5 & September 6",
 	subtitle: "By Appointment"
 	)
 event.save
